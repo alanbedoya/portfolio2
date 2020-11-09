@@ -1,33 +1,51 @@
 import React from 'react';
-import portrait from '../img/portrait.jpg';
+import clock from '../img/clock.svg';
+import diaphragm from '../img/diaphragm.svg';
+import money from '../img/money.svg';
+import teamwork from '../img/teamwork.svg';
+import home2 from '../img/home2.png';
 
-const aboutSection = () => {
+const servicesSection = () => {
   return (
-    <div>
+    <div className='services'>
       <div className='description'>
-        <div className='title'>
-          <div className='hide'>
-            <h2>Welcome! I'm </h2>
+        <h2>
+          High <span>quality</span> services
+        </h2>
+        <div className='cards'>
+          <div className='card'>
+            <div className='icon'>
+              <img src={clock} alt='clock' />
+              <h3>Efficient</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
-          <div className='hide'>
-            <h2>
-              <span>Alan</span> Bedoya
-            </h2>
+          <div className='card'>
+            <div className='icon'>
+              <img src={diaphragm} alt='diaphragm' />
+              <h3>Diaphragm</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
-          <div className='hide'>
-            <h2>true.</h2>
+          <div className='card'>
+            <div className='icon'>
+              <img src={money} alt='money' />
+              <h3>Affordable</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className='card'>
+            <div className='icon'>
+              <img src={teamwork} alt='teamwork' />
+              <h3>Teamwork</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <p>
-          Lets colobarate together to create something beautiful and amazing!
-        </p>
-        <button>Contact Me</button>
       </div>
-      <div className='image'>
-        <img src={portrait} alt='Alan Bedoya' />
-      </div>
+      <img src={home2} alt='camera' />
     </div>
   );
 };
 
-export default aboutSection;
+export default servicesSection;
