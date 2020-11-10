@@ -7,17 +7,17 @@ const bannerSection = () => {
     <StyledBanner>
       <StyledDescription>
         <div className='title'>
-          <div className='hide'>
+          <StyledHidden>
             <h2>Hey There!</h2>
-          </div>
-          <div className='hide'>
+          </StyledHidden>
+          <StyledHidden>
             <h2>
               I'm <span>Alan</span>
             </h2>
-          </div>
-          <div className='hide'>
+          </StyledHidden>
+          <StyledHidden>
             <h2>Bedoya</h2>
-          </div>
+          </StyledHidden>
         </div>
         <p>
           Lets colobarate together to create something beautiful and amazing!
@@ -51,6 +51,7 @@ const StyledDescription = styled.div`
 
 const StyledImage = styled.div`
   flex: 1;
+  overflow: hidden;
   border-radius: 30% 70% 70% 30% / 30% 16% 84% 70%;
 
   img {
@@ -59,5 +60,9 @@ const StyledImage = styled.div`
     object-fit: cover;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
+`;
+
+const StyledHidden = styled.div`
+  overflow: hidden;
 `;
 export default bannerSection;
