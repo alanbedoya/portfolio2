@@ -16,39 +16,39 @@ const servicesSection = () => {
           About <span>Me</span>
         </h2>
         <StyledCards>
-          <div className='card'>
+          <StyledCard>
             <div className='icon'>
               <img src={clock} alt='clock' />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className='card'>
+          </StyledCard>
+          <StyledCard>
             <div className='icon'>
               <img src={diaphragm} alt='diaphragm' />
               <h3>Diaphragm</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className='card'>
+          </StyledCard>
+          <StyledCard>
             <div className='icon'>
               <img src={money} alt='money' />
               <h3>Affordable</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className='card'>
+          </StyledCard>
+          <StyledCard>
             <div className='icon'>
               <img src={teamwork} alt='teamwork' />
               <h3>Teamwork</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
+          </StyledCard>
         </StyledCards>
       </StyledDescription>
-      <StyledImage>
+      <StyledAboutImage>
         <img src={about} alt='process' />
-      </StyledImage>
+      </StyledAboutImage>
     </StyledAbout>
   );
 };
@@ -67,6 +67,24 @@ const StyledAbout = styled(StyledLayout)`
 const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+`;
+
+const StyledCard = styled.div`
+  flex-basis: 16rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      padding: 1rem;
+    }
+  }
+`;
+
+const StyledAboutImage = styled(StyledImage)`
+  img {
+    object-fit: contain;
+  }
 `;
 
 export default servicesSection;

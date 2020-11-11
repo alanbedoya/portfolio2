@@ -41,6 +41,7 @@ const bannerSection = () => {
 const StyledBanner = styled(StyledLayout)``;
 
 const StyledBannerImage = styled(StyledImage)`
+  object-fit: contain;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 `;
 
