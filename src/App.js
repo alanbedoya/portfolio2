@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from './components/globalStyles';
+import GlobalStyles from './global/globalStyles';
 import AboutMe from './pages/aboutMe';
 
 function App() {

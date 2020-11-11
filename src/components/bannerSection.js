@@ -1,6 +1,12 @@
 import React from 'react';
-import portrait from '../img/portrait.jpg';
 import styled from 'styled-components';
+import portrait from '../img/portrait.jpg';
+import {
+  StyledLayout,
+  StyledDescription,
+  StyledHidden,
+  StyledImage,
+} from '../styles';
 
 const bannerSection = () => {
   return (
@@ -20,49 +26,22 @@ const bannerSection = () => {
           </StyledHidden>
         </div>
         <p>
-          Lets colobarate together to create something beautiful and amazing!
+          Lets colobarate together to create something <br />
+          beautiful and amazing!
         </p>
         <button>Lets Connect!</button>
       </StyledDescription>
-      <StyledImage>
+      <StyledBannerImage>
         <img src={portrait} alt='Alan Bedoya' />
-      </StyledImage>
+      </StyledBannerImage>
     </StyledBanner>
   );
 };
 
-const StyledBanner = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
+const StyledBanner = styled(StyledLayout)``;
+
+const StyledBannerImage = styled(StyledImage)`
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 `;
 
-const StyledDescription = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const StyledImage = styled.div`
-  flex: 1;
-  overflow: hidden;
-  border-radius: 30% 70% 70% 30% / 30% 16% 84% 70%;
-
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  }
-`;
-
-const StyledHidden = styled.div`
-  overflow: hidden;
-`;
 export default bannerSection;

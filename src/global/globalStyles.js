@@ -9,7 +9,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: #1b1b1b;
-
   }
 
   button {
@@ -18,9 +17,10 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     padding: 1rem 2rem;
     border: 3px solid #23d997;
+    border-radius: 17px;
     background: transparent;
     color: white;
-    transition: all 0,5s ease;
+    transition: all 0.3s ease;
     &:hover{
       background-color: #23d997;
       color: white; 
