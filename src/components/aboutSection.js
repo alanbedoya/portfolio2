@@ -12,8 +12,7 @@ const servicesSection = () => {
     <StyledAbout>
       <StyledDescription>
         <h2>
-          Here's A Little Bit <br />
-          About <span>Me</span>
+          Here's A Little Bit About <span>Me</span>
         </h2>
         <StyledCards>
           <StyledCard>
