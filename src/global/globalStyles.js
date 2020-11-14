@@ -10,6 +10,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: #1b1b1b;
+    max-width: 1900px;
+    margin: auto;
+    padding: auto;
   }
 
   button {
