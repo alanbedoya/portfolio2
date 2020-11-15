@@ -1,25 +1,28 @@
 import React from 'react';
 import logo from '../img/logo.svg';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const navSection = () => {
   return (
     <StyledNav>
       <h1>
-        <img src={logo} alt='logo' />
+        <Link id='logo' to='/'>
+          <img src={logo} alt='logo' />
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href='#'>1. About Me</a>
+          <Link to='/'>1. About Me</Link>
         </li>
         <li>
-          <a href='#'>2. My Work</a>
+          <Link to='/work'>2. My Work</Link>
         </li>
         <li>
-          <a href='#'>3. Contact Me</a>
+          <Link to='/contact'>3. Contact Me</Link>
         </li>
         <li>
-          <a href='#'>4. Resume</a>
+          <Link to='/'>4. Resume</Link>
         </li>
       </ul>
     </StyledNav>

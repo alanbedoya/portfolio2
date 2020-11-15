@@ -11,15 +11,17 @@ function App() {
     <div className='App'>
       <GlobalStyles />
       <NavSection />
-      <Route path='/' exact>
-        <AboutMe />
-      </Route>
-      <Route path='/work' exact>
-        <MyWork />
-      </Route>
-      <Route path='/contact'>
-        <ContactMe />
-      </Route>
+      <Switch>
+        <Route path='/' exact>
+          <AboutMe />
+        </Route>
+        <Route path='/work'>
+          <MyWork />
+        </Route>
+        <Route path='/contact'>
+          <ContactMe />
+        </Route>
+      </Switch>
     </div>
   );
 }
