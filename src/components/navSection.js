@@ -39,6 +39,8 @@ const StyledNav = styled.nav`
   background-color: #282828;
 
   img {
+    display: flex;
+    justify-content: flex-start;
     width: 4rem;
     height: 4rem;
   }
