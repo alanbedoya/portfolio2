@@ -23,7 +23,7 @@ const navSection = () => {
           <Link to='/contact'>3. Contact Me</Link>
         </li>
         <li>
-          <Link to={resume} rel='opener'>
+          <Link to={resume} target='opener'>
             4. Resume
           </Link>
         </li>
