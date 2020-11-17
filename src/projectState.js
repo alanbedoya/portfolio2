@@ -12,14 +12,19 @@ export const ProjectState = () => {
       mainImg: athlete,
       secondImg: athlete2,
       url: '/work/project1',
-      description: [
+      work: [
         {
-          title: 'Project 1',
+          title: 'Project 1/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab!',
         },
         {
-          title: 'Project 1.2',
+          title: 'Project 2/3',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
+        },
+        {
+          title: 'Project 3/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
         },
@@ -30,14 +35,19 @@ export const ProjectState = () => {
       mainImg: racer,
       secondImg: racer2,
       url: '/work/project2',
-      description: [
+      work: [
         {
-          title: 'Project 2',
+          title: 'Project 1/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab!',
         },
         {
-          title: 'Project 2.2',
+          title: 'Project 2/3',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
+        },
+        {
+          title: 'Project 3/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
         },
@@ -48,14 +58,19 @@ export const ProjectState = () => {
       mainImg: coffee,
       secondImg: coffee2,
       url: '/work/project3',
-      description: [
+      work: [
         {
-          title: 'Project 3',
+          title: 'Project 1/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ab!',
         },
         {
-          title: 'Project 3',
+          title: 'Project 2/3',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
+        },
+        {
+          title: 'Project 3/3',
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum sint hic!',
         },

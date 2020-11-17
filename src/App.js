@@ -5,6 +5,7 @@ import NavSection from './components/navSection';
 import AboutMe from './pages/aboutMe';
 import MyWork from './pages/myWork';
 import ContactMe from './pages/contactMe';
+import ProjectDetail from './pages/projectDetail';
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
         <Route path='/' exact>
           <AboutMe />
         </Route>
-        <Route path='/work'>
+        <Route path='/work' exact>
           <MyWork />
+        </Route>
+        <Route path='/work/:id'>
+          <ProjectDetail />
         </Route>
         <Route path='/contact'>
           <ContactMe />
