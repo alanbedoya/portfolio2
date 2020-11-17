@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../img/logo.svg';
+import logo from '../assets/img/logo.svg';
+import resume from '../assets/resume/resume.pdf';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +23,9 @@ const navSection = () => {
           <Link to='/contact'>3. Contact Me</Link>
         </li>
         <li>
-          <Link to='/'>4. Resume</Link>
+          <Link to={resume} rel='opener'>
+            4. Resume
+          </Link>
         </li>
       </ul>
     </StyledNav>

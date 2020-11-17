@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import athlete from '../img/athlete-small.png';
-import racer from '../img/theracer-small.png';
-import coffee from '../img/coffee.jpg';
+import athlete from '../assets/img/athlete-small.png';
+import racer from '../assets/img/theracer-small.png';
+import coffee from '../assets/img/coffee.jpg';
 
 const myWork = () => {
   return (

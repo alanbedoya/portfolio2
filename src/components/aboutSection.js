@@ -1,9 +1,9 @@
 import React from 'react';
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
-import about from '../img/about.svg';
+import clock from '../assets/img/clock.svg';
+import diaphragm from '../assets/img/diaphragm.svg';
+import money from '../assets/img/money.svg';
+import teamwork from '../assets/img/teamwork.svg';
+import about from '../assets/img/about.svg';
 import { StyledLayout, StyledDescription, StyledImage } from '../styles';
 import styled from 'styled-components';
 

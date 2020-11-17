@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import portrait from '../img/portrait.jpg';
+import portrait from '../assets/img/portrait.jpg';
 import {
   StyledLayout,
   StyledDescription,
