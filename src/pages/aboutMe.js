@@ -7,7 +7,12 @@ import { pageAnimation } from '../animation';
 
 const aboutMe = () => {
   return (
-    <motion.div variants={pageAnimation} initial='hidden' animate='show'>
+    <motion.div
+      variants={pageAnimation}
+      initial='hidden'
+      exit='exit'
+      animate='show'
+    >
       <BannerSection />
       <AboutSection />
       <SkillsSection />
