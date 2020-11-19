@@ -4,10 +4,17 @@ import { Link } from 'react-router-dom';
 import athlete from '../assets/img/athlete-small.png';
 import racer from '../assets/img/theracer-small.png';
 import coffee from '../assets/img/coffee.jpg';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const myWork = () => {
   return (
-    <StyledWork>
+    <StyledWork
+      variants={pageAnimation}
+      initial='hidden'
+      exit='exit'
+      animate='show'
+    >
       <StyledProject>
         <h2>Project 1</h2>
         <div className='line'></div>
@@ -33,7 +40,7 @@ const myWork = () => {
   );
 };
 
-const StyledWork = styled.div`
+const StyledWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
