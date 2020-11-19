@@ -14,6 +14,7 @@ const myWork = () => {
       initial='hidden'
       exit='exit'
       animate='show'
+      style={{ background: '#bbbfca' }}
     >
       <StyledProject>
         <h2>Project 1</h2>
