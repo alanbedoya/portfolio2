@@ -14,17 +14,17 @@ const navSection = () => {
       </h1>
       <ul>
         <li>
-          <Link to='/'>1. About Me</Link>
+          <Link to='/'>01. About Me</Link>
         </li>
         <li>
-          <Link to='/work'>2. My Work</Link>
+          <Link to='/work'>02. My Work</Link>
         </li>
         <li>
-          <Link to='/contact'>3. Contact Me</Link>
+          <Link to='/contact'>03. Contact Me</Link>
         </li>
         <li>
           <Link to={resume} target='opener'>
-            4. Resume
+            04. Resume
           </Link>
         </li>
       </ul>

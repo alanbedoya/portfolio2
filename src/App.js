@@ -5,6 +5,7 @@ import NavSection from './components/navSection';
 import AboutMe from './pages/aboutMe';
 import MyWork from './pages/myWork';
 import ContactMe from './pages/contactMe';
+import FooterSection from './components/footerSection';
 import ProjectDetail from './pages/projectDetail';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <ContactMe />
         </Route>
       </Switch>
+      <FooterSection />
     </div>
   );
 }
