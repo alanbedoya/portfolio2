@@ -7,6 +7,8 @@ import {
   StyledHidden,
   StyledImage,
 } from '../styles';
+import { titleAnimation, fadeAnimation, photoAnimation } from '../animation';
+import { motion } from 'framer-motion';
 
 const bannerSection = () => {
   return (
@@ -14,25 +16,29 @@ const bannerSection = () => {
       <StyledDescription>
         <div className='title'>
           <StyledHidden>
-            <h2>Hey There!</h2>
+            <motion.h2 variants={titleAnimation}>Hey There!</motion.h2>
           </StyledHidden>
           <StyledHidden>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               I'm <span>Alan</span>
-            </h2>
+            </motion.h2>
           </StyledHidden>
           <StyledHidden>
-            <h2>Bedoya</h2>
+            <motion.h2 variants={titleAnimation}>Bedoya</motion.h2>
           </StyledHidden>
         </div>
-        <p>
+        <motion.p variants={fadeAnimation}>
           Lets colobarate together to create something <br />
           beautiful and amazing!
-        </p>
-        <button>Lets Connect!</button>
+        </motion.p>
+        <motion.button variants={fadeAnimation}>Lets Connect!</motion.button>
       </StyledDescription>
       <StyledBannerImage>
-        <img src={portrait} alt='Alan Bedoya' />
+        <motion.img
+          variants={photoAnimation}
+          src={portrait}
+          alt='Alan Bedoya'
+        />
       </StyledBannerImage>
     </StyledBanner>
   );
