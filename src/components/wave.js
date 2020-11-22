@@ -23,8 +23,13 @@ const wave = () => {
 };
 
 const StyledWave = styled.svg`
+  max-width: 1920px;
+  height: auto;
   position: absolute;
   left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
 `;
 

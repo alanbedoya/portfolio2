@@ -62,6 +62,7 @@ const ProjectDetail = () => {
 
 const StyledDetails = styled(motion.div)`
   color: white;
+  background-color: #87556f;
 `;
 
 const StyledHeader = styled.div`
