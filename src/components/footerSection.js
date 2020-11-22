@@ -3,10 +3,18 @@ import styled from 'styled-components';
 
 const footerSection = () => {
   return (
-    <div>
+    <StyledFooter>
       <h1>Footer</h1>
-    </div>
+    </StyledFooter>
   );
 };
+
+const StyledFooter = styled.div`
+  background-color: #282828;
+
+  h1 {
+    color: #89c9b8;
+  }
+`;
 
 export default footerSection;

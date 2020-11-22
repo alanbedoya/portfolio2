@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #1b1b1b;
+    background: #4c4c4c;
     max-width: 1900px;
     margin: auto;
     padding: auto;
@@ -20,13 +20,13 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.1;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 3px solid #89c9b8;
     border-radius: 17px;
     background: transparent;
     color: white;
     transition: all 0.3s ease;
     &:hover{
-      background-color: #23d997;
+      background-color: #89c9b8;
       color: white; 
     }
   }
@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
 
     span {
       font-weight: bold;
-      color: #23d997;
+      color: #89c9b8;
     }
 
     p {

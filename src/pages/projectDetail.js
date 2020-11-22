@@ -86,7 +86,7 @@ const StyledHeader = styled.div`
 const StyledProjects = styled.div`
   min-height: 80vh;
   display: flex;
-  margin: 5rem 10rem;
+  margin: 5rem 5rem;
   align-items: center;
   justify-content: space-around;
 `;
@@ -100,7 +100,7 @@ const StyledWork = styled.div`
 
   .line {
     width: 100%;
-    background: #23d997;
+    background: #89c9b8;
     height: 0.5rem;
     margin: 1rem 0rem;
   }
