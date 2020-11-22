@@ -9,6 +9,7 @@ import {
 } from '../styles';
 import { titleAnimation, fadeAnimation, photoAnimation } from '../animation';
 import { motion } from 'framer-motion';
+import Wave from './wave';
 
 const bannerSection = () => {
   return (
@@ -40,6 +41,7 @@ const bannerSection = () => {
           alt='Alan Bedoya'
         />
       </StyledBannerImage>
+      <Wave />
     </StyledBanner>
   );
 };

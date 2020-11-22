@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: #4c4c4c;
-    max-width: 1900px;
+    max-width: 1920px;
     margin: auto;
     padding: auto;
   }
