@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import { ProjectState } from '../projectState';
-import { motionValue } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
@@ -37,6 +36,7 @@ const ProjectDetail = () => {
           initial='hidden'
           exit='exit'
           animate='show'
+          style={{ background: '#87556f' }}
         >
           <StyledHeader>
             <h2>{project.title}</h2>
@@ -62,7 +62,6 @@ const ProjectDetail = () => {
 
 const StyledDetails = styled(motion.div)`
   color: white;
-  background-color: #87556f;
 `;
 
 const StyledHeader = styled.div`

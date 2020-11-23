@@ -5,8 +5,8 @@ import NavSection from './components/navSection';
 import AboutMe from './pages/aboutMe';
 import MyWork from './pages/myWork';
 import ContactMe from './pages/contactMe';
-import FooterSection from './components/footerSection';
 import ProjectDetail from './pages/projectDetail';
+import FooterSection from './components/footerSection';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -23,15 +23,15 @@ function App() {
           <Route path='/work' exact>
             <MyWork />
           </Route>
-          <Route path='/work/:id'>
+          <Route path='/work/:id' exact>
             <ProjectDetail />
           </Route>
-          <Route path='/contact'>
+          <Route path='/contact' exact>
             <ContactMe />
           </Route>
         </Switch>
+        <FooterSection />
       </AnimatePresence>
-      <FooterSection />
     </div>
   );
 }

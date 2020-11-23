@@ -11,8 +11,12 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: #e0ece4;
     max-width: 1920px;
+    min-height: 100%;
     margin: auto;
     padding: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   button {

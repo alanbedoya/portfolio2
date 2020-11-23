@@ -9,7 +9,7 @@ const contactMe = () => {
       initial='hidden'
       exit='exit'
       animate='show'
-      style={{ background: '#f2dcbb' }}
+      style={{ background: '#ffc5a1' }}
     >
       <h1>Contact Me</h1>
     </motion.div>

@@ -5,7 +5,14 @@ import athlete from '../assets/img/athlete-small.png';
 import racer from '../assets/img/theracer-small.png';
 import coffee from '../assets/img/coffee.jpg';
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../animation';
+import {
+  pageAnimation,
+  fadeAnimation,
+  photoAnimation,
+  lineAnimation,
+  // loadingContianer,
+  // loadingAnimation,
+} from '../animation';
 
 const myWork = () => {
   return (
@@ -14,13 +21,21 @@ const myWork = () => {
       initial='hidden'
       exit='exit'
       animate='show'
-      style={{ background: '#bbbfca' }}
+      style={{ background: '#dcd6f7' }}
     >
+      {/* <motion.div variants={loadingContianer}>
+        <StyledLoading1 variants={loadingAnimation}></StyledLoading1>
+        <StyledLoading2 variants={loadingAnimation}></StyledLoading2>
+        <StyledLoading3 variants={loadingAnimation}></StyledLoading3>
+        <StyledLoading4 variants={loadingAnimation}></StyledLoading4>
+      </motion.div> */}
       <StyledProject>
-        <h2>Project 1</h2>
-        <div className='line'></div>
+        <motion.h2 variants={fadeAnimation}>Project 1</motion.h2>
+        <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/work/project1'>
-          <img src={athlete} alt='athlete' />
+          <StyledHide>
+            <motion.img variants={photoAnimation} src={athlete} alt='athlete' />
+          </StyledHide>
         </Link>
       </StyledProject>
       <StyledProject>
@@ -60,7 +75,7 @@ const StyledProject = styled.div`
 
   .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #89c9b8;
     margin-bottom: 3rem;
   }
 
@@ -70,4 +85,33 @@ const StyledProject = styled.div`
     object-fit: cover;
   }
 `;
+
+const StyledHide = styled.div`
+  overflow: hidden;
+`;
+
+// const StyledLoading1 = styled(motion.div)`
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   top: 14%;
+//   height: 100vh;
+//   background-color: #fffebf;
+//   z-index: 2;
+// `;
+
+// const StyledLoading2 = styled(StyledLoading1)`
+//   background: #ff8efb;
+// `;
+
+// const StyledLoading3 = styled(StyledLoading1)`
+//   background: #8ed2ff;
+// `;
+
+// const StyledLoading4 = styled(StyledLoading1)`
+//   background: #8effa0;
+// `;
+
 export default myWork;
