@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Scroll from '../components/scroll';
 import { Link } from 'react-router-dom';
 import athlete from '../assets/img/athlete-small.png';
 import racer from '../assets/img/theracer-small.png';
@@ -30,6 +31,7 @@ const myWork = () => {
         <StyledLoading4 variants={loadingAnimation}></StyledLoading4>
       </motion.div> */}
       <StyledProject>
+        <Scroll />
         <motion.h2 variants={fadeAnimation}>Project 1</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/work/project1'>
