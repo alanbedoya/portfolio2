@@ -5,54 +5,27 @@ import { StyledLayout } from '../styles';
 const SkillsSection = () => {
   return (
     <StyledSkills>
-      <div className='faq'>
-        <h2>
-          Any Questions <span>FAQ</span>
-        </h2>
-        <div className='question'>
-          <h4>How Do I Start?</h4>
-          <div className='answer'>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              enim.
-            </p>
-          </div>
-          <div className='faq-line'></div>
-        </div>
-        <div className='question'>
-          <h4>Daily Schedule</h4>
-          <div className='answer'>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              enim.
-            </p>
-          </div>
-          <div className='faq-line'></div>
-        </div>
-        <div className='question'>
-          <h4>Different Payment Methods</h4>
-          <div className='answer'>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              enim.
-            </p>
-          </div>
-          <div className='faq-line'></div>
-        </div>
-        <div className='question'>
-          <h4>How Do I Start?</h4>
-          <div className='answer'>
-            <p>What Products do you offer?</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              enim.
-            </p>
-          </div>
-          <div className='faq-line'></div>
-        </div>
+      <h2>
+        The Skill & <br />
+        Tools I <span>Know</span>
+      </h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+        praesentium, asperiores doloribus dolorum fugiat incidunt quasi nam
+        neque officia consequatur error distinctio, reiciendis saepe hic
+        sapiente molestiae rerum odio dicta minima quae, repellat beatae
+        reprehenderit quidem. Dolores placeat ducimus blanditiis possimus libero
+        cumque ipsa rerum quas nostrum facere, ex harum.
+      </p>
+      <div className='iconGrid'>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
+        <div className='icon'></div>
       </div>
     </StyledSkills>
   );
@@ -60,10 +33,6 @@ const SkillsSection = () => {
 
 const StyledSkills = styled(StyledLayout)`
   display: block;
-
-  span {
-    display: block;
-  }
 
   h2 {
     padding-bottom: 2rem;

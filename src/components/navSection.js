@@ -2,9 +2,12 @@ import React from 'react';
 import logo from '../assets/img/logo.svg';
 import resume from '../assets/resume/resume.pdf';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const navSection = () => {
+const NavSection = () => {
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <h1>
@@ -14,17 +17,32 @@ const navSection = () => {
       </h1>
       <ul>
         <li>
-          <Link to='/'>01. About Me</Link>
+          <Link to='/'>1. About Me</Link>
+          <Styledline
+            transition={{ duration: 0.75 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/' ? '55%' : '0%' }}
+          />
         </li>
         <li>
-          <Link to='/work'>02. My Work</Link>
+          <Link to='/work'>2. My Work</Link>
+          <Styledline
+            transition={{ duration: 0.75 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/work' ? '55%' : '0%' }}
+          />
         </li>
         <li>
-          <Link to='/contact'>03. Contact Me</Link>
+          <Link to='/contact'>3. Contact Me</Link>
+          <Styledline
+            transition={{ duration: 0.75 }}
+            initial={{ width: '0%', left: '21%' }}
+            animate={{ width: pathname === '/contact' ? '60%' : '0%' }}
+          />
         </li>
         <li>
           <Link to={resume} target='opener'>
-            04. Resume
+            4. Resume
           </Link>
         </li>
       </ul>
@@ -67,4 +85,15 @@ const StyledNav = styled.nav`
   }
 `;
 
-export default navSection;
+const Styledline = styled(motion.div)`
+  height: 0.3rem;
+  background: #89c9b8;
+  position: absolute;
+  left: 23%;
+  @media (max-width: 1440px) {
+    left: 23%;
+    width: 10%;
+  }
+`;
+
+export default NavSection;

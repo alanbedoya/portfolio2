@@ -8,7 +8,7 @@ import { pageAnimation } from '../animation';
 const ProjectDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [projects, setProjects] = useState(ProjectState);
+  const [projects] = useState(ProjectState);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
