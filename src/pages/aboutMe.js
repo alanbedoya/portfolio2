@@ -15,10 +15,10 @@ const aboutMe = () => {
       animate='show'
       style={{ background: '#4c4c4c' }}
     >
-      <Scroll />
       <BannerSection />
       <AboutSection />
       <SkillsSection />
+      <Scroll />
     </motion.div>
   );
 };

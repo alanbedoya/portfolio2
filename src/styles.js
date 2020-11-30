@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledLayout = styled.div`
-  min-height: 90vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 4rem 10rem;
   color: white;
 `;
 
@@ -26,7 +26,7 @@ export const StyledImage = styled.div`
 
   img {
     width: 100%;
-    height: 90vh;
+    height: auto;
   }
 `;
 

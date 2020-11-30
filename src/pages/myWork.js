@@ -31,7 +31,6 @@ const myWork = () => {
         <StyledLoading4 variants={loadingAnimation}></StyledLoading4>
       </motion.div> */}
       <StyledProject>
-        <Scroll />
         <motion.h2 variants={fadeAnimation}>Project 1</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
         <Link to='/work/project1'>
@@ -54,12 +53,12 @@ const myWork = () => {
           <img src={coffee} alt='coffee' />
         </Link>
       </StyledProject>
+      <Scroll />
     </StyledWork>
   );
 };
 
 const StyledWork = styled(motion.div)`
-  min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
   display: flex;
