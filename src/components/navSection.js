@@ -10,18 +10,18 @@ const NavSection = () => {
   const { pathname } = useLocation();
   return (
     <StyledNav>
-      <h1>
+      <div>
         <Link id='logo' to='/'>
           <img src={logo} alt='logo' />
         </Link>
-      </h1>
+      </div>
       <ul>
         <li>
           <Link to='/'>1. About Me</Link>
           <Styledline
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '55%' : '0%' }}
+            animate={{ width: pathname === '/' ? '57%' : '0%' }}
           />
         </li>
         <li>
@@ -29,15 +29,15 @@ const NavSection = () => {
           <Styledline
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '55%' : '0%' }}
+            animate={{ width: pathname === '/work' ? '57%' : '0%' }}
           />
         </li>
         <li>
           <Link to='/contact'>3. Contact Me</Link>
           <Styledline
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%', left: '21%' }}
-            animate={{ width: pathname === '/contact' ? '60%' : '0%' }}
+            initial={{ width: '0%', left: '19%' }}
+            animate={{ width: pathname === '/contact' ? '63%' : '0%' }}
           />
         </li>
         <li>
@@ -72,10 +72,13 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    @media (max-width: 1200px) {
+      font-size: 1px;
+    }
   }
 
   li {
-    padding: 5vh;
+    padding: 4vh;
     position: relative;
   }
 
@@ -89,10 +92,9 @@ const Styledline = styled(motion.div)`
   height: 0.3rem;
   background: #89c9b8;
   position: absolute;
-  left: 23%;
-  @media (max-width: 1440px) {
-    left: 23%;
-    width: 10%;
+  left: 22%;
+  @media (max-width: 1200px) {
+    left: 21%;
   }
 `;
 
