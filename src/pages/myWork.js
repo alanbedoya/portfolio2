@@ -81,8 +81,8 @@ const StyledProject = styled.div`
   }
 
   img {
-    width: 75rem;
-    height: 45rem;
+    width: 65rem;
+    height: 35rem;
     object-fit: cover;
   }
 `;
