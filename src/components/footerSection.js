@@ -50,8 +50,8 @@ const FooterSection = () => {
 
 const StyledFooter = styled(motion.footer)`
   height: 4rem;
+  background: #282828;
   display: flex;
-  background-color: #282828;
   margin-top: auto;
   padding-left: 10%;
   padding-right: 10%;
@@ -79,7 +79,6 @@ const StyledIcons = styled.ul`
     .colorChange {
       :hover {
         fill: #89c9b8;
-        @include easeOut();
       }
     }
   }

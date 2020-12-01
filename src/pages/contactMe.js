@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import styled from 'styled-components';
+import Scroll from '../components/scroll';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
@@ -53,18 +54,23 @@ const contactMe = () => {
         <textarea name='message' />
         <button type='submit'>Send</button>
       </form>
+      <Scroll />
     </StyledContact>
   );
 };
 
 const StyledContact = styled(motion.div)`
-  min-height: 90vh;
+  min-height: 85.2vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4rem 10rem;
   color: white;
   padding-bottom: 500px;
+
+  @media (max-width: 1440px) {
+    min-height: 83vh;
+  }
 
   .fieldLeft {
     height: 40px;
