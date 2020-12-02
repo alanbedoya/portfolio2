@@ -42,16 +42,10 @@ const contactMe = () => {
         </h2>
       </div>
       <form className='contact-form' onSubmit={sendEmail}>
-        <input type='text' name='name' required />
-        <label for='name' class='label-name'>
-          <span class='content-name'>Name</span>
-        </label>
-        <label>Email</label>
-        <input type='email' name='email' />
-        <label>Subject</label>
-        <input type='text' name='subject' />
-        <label>Message</label>
-        <textarea name='message' />
+        <input type='text' name='name' placeholder='Name' required />
+        <input type='email' name='email' placeholder='Email' />
+        <input type='text' name='subject' placeholder='Subject' />
+        <textarea name='message' placeholder='Message' />
         <button type='submit'>Send</button>
       </form>
       <Scroll />
@@ -85,11 +79,23 @@ const StyledContact = styled(motion.div)`
     position: relative;
 
     input {
-      padding: 2rem;
+      padding: 1rem;
+
+      ::-webkit-input-placeholder {
+        color: #cccccc;
+      }
     }
 
     textarea {
       padding: 4rem;
+
+      ::-webkit-input-placeholder {
+        color: #cccccc;
+      }
+      :focus {
+        outline: none;
+        background-color: grey;
+      }
     }
 
     button {
