@@ -60,22 +60,23 @@ const StyledContact = styled(motion.div)`
   justify-content: space-between;
   padding: 4rem 10rem;
   color: white;
-  padding-bottom: 500px;
+  padding-bottom: 100px;
 
   @media (max-width: 1440px) {
-    min-height: 83vh;
+    min-height: 80vh;
+    padding-bottom: 138px;
   }
 
   .fieldLeft {
-    height: 40px;
-    flex-grow: 1;
+    /* flex-grow: ; */
   }
 
   .contact-form {
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 40px;
+    height: auto;
     position: relative;
 
     input {
@@ -87,7 +88,9 @@ const StyledContact = styled(motion.div)`
     }
 
     textarea {
-      padding: 4rem;
+      padding: 1rem;
+      height: 10rem;
+      text-align: left;
 
       ::-webkit-input-placeholder {
         color: #cccccc;
