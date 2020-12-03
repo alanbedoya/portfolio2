@@ -81,9 +81,16 @@ const StyledContact = styled(motion.div)`
 
     input {
       padding: 1rem;
+      border: solid 1px #b3aca7;
+      border-bottom: none;
 
       ::-webkit-input-placeholder {
         color: #cccccc;
+      }
+
+      :focus {
+        outline: none;
+        background-color: #f4f4f2;
       }
     }
 
@@ -91,23 +98,26 @@ const StyledContact = styled(motion.div)`
       padding: 1rem;
       height: 10rem;
       text-align: left;
+      border: solid 1px #b3aca7;
+      border-bottom: none;
 
       ::-webkit-input-placeholder {
         color: #cccccc;
       }
       :focus {
         outline: none;
-        background-color: grey;
+        background-color: #f4f4f2;
       }
     }
 
     button {
       display: flex;
+      font-size: 1rem;
       justify-content: center;
       align-items: center;
-      width: 40%;
+      width: 25%;
       margin-top: 2vh;
-      margin-left: 19vh;
+      margin-left: 28vh;
     }
   }
 `;
