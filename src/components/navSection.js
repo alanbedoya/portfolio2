@@ -21,7 +21,7 @@ const NavSection = () => {
           <Styledline
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '57%' : '0%' }}
+            animate={{ width: pathname === '/' ? '61%' : '0%' }}
           />
         </li>
         <li>
@@ -29,15 +29,15 @@ const NavSection = () => {
           <Styledline
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '57%' : '0%' }}
+            animate={{ width: pathname === '/work' ? '61%' : '0%' }}
           />
         </li>
         <li>
           <Link to='/contact'>3. Contact Me</Link>
           <Styledline
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%', left: '19%' }}
-            animate={{ width: pathname === '/contact' ? '63%' : '0%' }}
+            initial={{ width: '0%', left: '18%' }}
+            animate={{ width: pathname === '/contact' ? '65%' : '0%' }}
           />
         </li>
         <li>
@@ -93,6 +93,11 @@ const Styledline = styled(motion.div)`
   background: #89c9b8;
   position: absolute;
   left: 22%;
+
+  @media (max-width: 1440px) {
+    left: 20%;
+  }
+
   @media (max-width: 1200px) {
     left: 21%;
   }

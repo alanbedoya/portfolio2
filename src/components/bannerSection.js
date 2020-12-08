@@ -51,6 +51,13 @@ const StyledBanner = styled(StyledLayout)``;
 const StyledBannerImage = styled(StyledImage)`
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  @media (max-width: 1440px) {
+    img {
+      width: 85%;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+  }
 `;
 
 export default bannerSection;

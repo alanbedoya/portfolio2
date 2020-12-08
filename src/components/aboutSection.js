@@ -30,6 +30,8 @@ const servicesSection = () => {
 };
 
 const StyledAbout = styled(StyledLayout)`
+  padding-right: 0;
+
   h2 {
     padding-bottom: 5rem;
   }
