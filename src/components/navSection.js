@@ -72,9 +72,6 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    @media (max-width: 1200px) {
-      font-size: 1px;
-    }
   }
 
   li {
@@ -85,6 +82,9 @@ const StyledNav = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    @media (max-width: 1440px) {
+      font-size: 1rem;
+    }
   }
 `;
 
