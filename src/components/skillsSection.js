@@ -22,10 +22,10 @@ const SkillsSection = () => {
         cumque ipsa rerum quas nostrum facere, ex harum.
       </p>
       <div className='iconGrid'>
-        <SiJavascript size='18vh' />
-        <SiReact size='18vh' />
-        <SiVueDotJs size='18vh' />
-        <SiTypescript size='18vh' />
+        <SiJavascript size='17vh' />
+        <SiReact size='17vh' />
+        <SiVueDotJs size='17vh' />
+        <SiTypescript size='17vh' />
         <div className='icon'></div>
         <div className='icon'></div>
         <div className='icon'></div>
