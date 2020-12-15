@@ -1,8 +1,22 @@
 import React from 'react';
-import { SiJavascript } from 'react-icons/si';
-import { SiReact } from 'react-icons/si';
-import { SiVueDotJs } from 'react-icons/si';
-import { SiTypescript } from 'react-icons/si';
+import {
+  SiJavascript,
+  SiReact,
+  SiVueDotJs,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiSass,
+  SiTailwindcss,
+  SiGraphql,
+  SiNodeDotJs,
+  SiStyledComponents,
+  SiGit,
+  SiLaravel,
+  SiFirebase,
+  SiMongodb,
+  SiPostgresql,
+} from 'react-icons/si';
 import styled from 'styled-components';
 import { StyledLayout } from '../styles';
 
@@ -26,10 +40,18 @@ const SkillsSection = () => {
         <SiReact size='17vh' />
         <SiVueDotJs size='17vh' />
         <SiTypescript size='17vh' />
-        <div className='icon'></div>
-        <div className='icon'></div>
-        <div className='icon'></div>
-        <div className='icon'></div>
+        <SiHtml5 size='17vh' />
+        <SiCss3 size='17vh' />
+        <SiSass size='17vh' />
+        <SiTailwindcss size='17vh' />
+        <SiGraphql size='17vh' />
+        <SiNodeDotJs size='17vh' />
+        <SiStyledComponents size='17vh' />
+        <SiGit size='17vh' />
+        <SiLaravel size='17vh' />
+        <SiFirebase size='17vh' />
+        <SiMongodb size='17vh' />
+        <SiPostgresql size='17vh' />
       </div>
     </StyledSkills>
   );
