@@ -1,4 +1,8 @@
 import React from 'react';
+import { SiJavascript } from 'react-icons/si';
+import { SiReact } from 'react-icons/si';
+import { SiVueDotJs } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
 import styled from 'styled-components';
 import { StyledLayout } from '../styles';
 
@@ -18,10 +22,10 @@ const SkillsSection = () => {
         cumque ipsa rerum quas nostrum facere, ex harum.
       </p>
       <div className='iconGrid'>
-        <div className='icon'></div>
-        <div className='icon'></div>
-        <div className='icon'></div>
-        <div className='icon'></div>
+        <SiJavascript size='18vh' />
+        <SiReact size='18vh' />
+        <SiVueDotJs size='18vh' />
+        <SiTypescript size='18vh' />
         <div className='icon'></div>
         <div className='icon'></div>
         <div className='icon'></div>
@@ -57,5 +61,7 @@ const StyledSkills = styled(StyledLayout)`
     }
   }
 `;
+
+const StyledIconGrid = styled.div``;
 
 export default SkillsSection;
