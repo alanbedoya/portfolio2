@@ -16,6 +16,8 @@ import {
   SiFirebase,
   SiMongodb,
   SiPostgresql,
+  SiBootstrap,
+  SiNextDotJs,
 } from 'react-icons/si';
 import styled from 'styled-components';
 import { StyledLayout } from '../styles';
@@ -35,24 +37,28 @@ const SkillsSection = () => {
         reprehenderit quidem. Dolores placeat ducimus blanditiis possimus libero
         cumque ipsa rerum quas nostrum facere, ex harum.
       </p>
-      <div className='iconGrid'>
-        <SiJavascript size='17vh' />
-        <SiReact size='17vh' />
-        <SiVueDotJs size='17vh' />
-        <SiTypescript size='17vh' />
-        <SiHtml5 size='17vh' />
-        <SiCss3 size='17vh' />
-        <SiSass size='17vh' />
-        <SiTailwindcss size='17vh' />
-        <SiGraphql size='17vh' />
-        <SiNodeDotJs size='17vh' />
-        <SiStyledComponents size='17vh' />
-        <SiGit size='17vh' />
-        <SiLaravel size='17vh' />
-        <SiFirebase size='17vh' />
-        <SiMongodb size='17vh' />
-        <SiPostgresql size='17vh' />
-      </div>
+      <StyledIconGrid>
+        <ul>
+          <SiJavascript size='17vh' />
+          <SiReact size='17vh' />
+          <SiVueDotJs size='17vh' />
+          <SiTypescript size='17vh' />
+          <SiHtml5 size='17vh' />
+          <SiCss3 size='17vh' />
+          <SiSass size='17vh' />
+          <SiTailwindcss size='17vh' />
+          <SiGraphql size='17vh' />
+          <SiNodeDotJs size='17vh' />
+          <SiStyledComponents size='17vh' />
+          <SiGit size='17vh' />
+          <SiLaravel size='17vh' />
+          <SiFirebase size='17vh' />
+          <SiMongodb size='17vh' />
+          <SiPostgresql size='17vh' />
+          <SiBootstrap size='17vh' />
+          <SiNextDotJs size='17vh' />
+        </ul>
+      </StyledIconGrid>
     </StyledSkills>
   );
 };
@@ -84,6 +90,17 @@ const StyledSkills = styled(StyledLayout)`
   }
 `;
 
-const StyledIconGrid = styled.div``;
+const StyledIconGrid = styled.div`
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    svg {
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+    }
+  }
+`;
 
 export default SkillsSection;
