@@ -4,26 +4,30 @@ import styled from 'styled-components';
 import Scroll from '../components/scroll';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { useAlert } from 'react-alert';
 
 const contactMe = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const alert = useAlert();
+
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service_jge6zqn',
-      'template_r2pup3n',
-      e.target,
-      'user_IHkaIHKa0LQ3fvjkPzRC5'
-    );
-    // .then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
+    emailjs
+      .sendForm(
+        'service_jge6zqn',
+        'template_r2pup3n',
+        e.target,
+        'user_IHkaIHKa0LQ3fvjkPzRC5'
+      )
+      .then(
+        () => {
+          alert.success(`Sent - Thanks for reaching out!`);
+        },
+        () => {
+          alert.error(`Error - Sorry, try again later.`);
+        }
+      );
     e.target.reset();
   }
 
@@ -42,11 +46,6 @@ const contactMe = () => {
         </h2>
       </div>
       <form className='contact-form' onSubmit={sendEmail}>
-        <Alert severity='success'>
-          <AlertTitle>Sent</AlertTitle>
-          Thanks for reaching out! I'll make sure to get back to you as soon as
-          possible.
-        </Alert>
         <input type='text' name='name' placeholder='Name' required />
         <input type='email' name='email' placeholder='Email' />
         <input type='text' name='subject' placeholder='Subject' />
@@ -72,9 +71,9 @@ const StyledContact = styled(motion.div)`
     padding-bottom: 138px;
   }
 
-  .fieldLeft {
-    /* flex-grow: ; */
-  }
+  /* .fieldLeft {
+    flex-flow: row wrap;
+  } */
 
   .contact-form {
     margin-top: 10rem;
