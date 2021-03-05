@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import portrait from '../assets/img/portrait.jpg';
 import {
@@ -32,7 +33,9 @@ const bannerSection = () => {
           Lets colobarate together to create something <br />
           beautiful and amazing!
         </motion.p>
-        <motion.button variants={fadeAnimation}>Lets Connect!</motion.button>
+        <Link to='/contact'>
+          <motion.button variants={fadeAnimation}>Lets Connect</motion.button>
+        </Link>
       </StyledDescription>
       <StyledBannerImage>
         <motion.img

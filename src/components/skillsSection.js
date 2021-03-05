@@ -39,24 +39,24 @@ const SkillsSection = () => {
       </p>
       <StyledIconGrid>
         <ul>
-          <SiJavascript size='17vh' />
-          <SiReact size='17vh' />
-          <SiVueDotJs size='17vh' />
-          <SiTypescript size='17vh' />
-          <SiHtml5 size='17vh' />
-          <SiCss3 size='17vh' />
-          <SiSass size='17vh' />
-          <SiTailwindcss size='17vh' />
-          <SiGraphql size='17vh' />
-          <SiNodeDotJs size='17vh' />
-          <SiStyledComponents size='17vh' />
-          <SiGit size='17vh' />
-          <SiLaravel size='17vh' />
-          <SiFirebase size='17vh' />
-          <SiMongodb size='17vh' />
-          <SiPostgresql size='17vh' />
-          <SiBootstrap size='17vh' />
-          <SiNextDotJs size='17vh' />
+          <SiJavascript size='15vh' />
+          <SiReact size='15vh' />
+          <SiVueDotJs size='15vh' />
+          <SiTypescript size='15vh' />
+          <SiHtml5 size='15vh' />
+          <SiCss3 size='15vh' />
+          <SiSass size='15vh' />
+          <SiTailwindcss size='15vh' />
+          <SiGraphql size='15vh' />
+          <SiNodeDotJs size='15vh' />
+          <SiStyledComponents size='15vh' />
+          <SiGit size='15vh' />
+          <SiLaravel size='15vh' />
+          <SiFirebase size='15vh' />
+          <SiMongodb size='15vh' />
+          <SiPostgresql size='15vh' />
+          <SiBootstrap size='15vh' />
+          <SiNextDotJs size='15vh' />
         </ul>
       </StyledIconGrid>
     </StyledSkills>
@@ -94,11 +94,11 @@ const StyledIconGrid = styled.div`
   ul {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     svg {
+      flex: 0 15%;
       margin-bottom: 2rem;
-      margin-left: 2rem;
     }
   }
 `;
