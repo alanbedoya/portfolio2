@@ -4,26 +4,26 @@ import styled from 'styled-components';
 import Scroll from '../components/scroll';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
+import { Alert, AlertTitle } from '@material-ui/lab';
 
 const contactMe = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_jge6zqn',
-        'template_r2pup3n',
-        e.target,
-        'user_IHkaIHKa0LQ3fvjkPzRC5'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      'service_jge6zqn',
+      'template_r2pup3n',
+      e.target,
+      'user_IHkaIHKa0LQ3fvjkPzRC5'
+    );
+    // .then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
     e.target.reset();
   }
 
@@ -42,11 +42,16 @@ const contactMe = () => {
         </h2>
       </div>
       <form className='contact-form' onSubmit={sendEmail}>
+        <Alert severity='success'>
+          <AlertTitle>Sent</AlertTitle>
+          Thanks for reaching out! I'll make sure to get back to you as soon as
+          possible.
+        </Alert>
         <input type='text' name='name' placeholder='Name' required />
         <input type='email' name='email' placeholder='Email' />
         <input type='text' name='subject' placeholder='Subject' />
         <textarea name='message' placeholder='Message' />
-        <button type='submit'>Send</button>
+        <button type='submit'> Send </button>
       </form>
       <Scroll />
     </StyledContact>
@@ -111,13 +116,13 @@ const StyledContact = styled(motion.div)`
     }
 
     button {
-      display: flex;
       font-size: 1rem;
       justify-content: center;
       align-items: center;
       width: 25%;
       margin-top: 2vh;
-      margin-left: 28vh;
+      margin-left: 24vh;
+      margin-bottom: 2vh;
     }
   }
 `;
