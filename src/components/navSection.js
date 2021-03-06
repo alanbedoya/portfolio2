@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../assets/img/logo.svg';
 import resume from '../assets/resume/resume.pdf';
 import styled from 'styled-components';
@@ -7,14 +7,21 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const NavSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
   return (
+    
     <StyledNav>
       <div>
         <Link id='logo' to='/'>
           <img src={logo} alt='logo' />
         </Link>
       </div>
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
       <ul>
         <li>
           <Link to='/'>1. About Me</Link>
@@ -87,6 +94,22 @@ const StyledNav = styled.nav`
     }
   }
 `;
+
+const Hamburger = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  span {
+    height: 2px;
+    width: 25px;
+    background: #89c9b8;
+    margin-bottom: 4px;
+    border-radius: 5px;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+ `;  
 
 const Styledline = styled(motion.div)`
   height: 0.3rem;

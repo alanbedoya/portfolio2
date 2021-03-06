@@ -5,7 +5,7 @@ export const StyledLayout = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 10rem;
+  padding: 5rem;
   color: white;
 `;
 

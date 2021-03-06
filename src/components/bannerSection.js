@@ -30,7 +30,7 @@ const bannerSection = () => {
           </StyledHidden>
         </div>
         <motion.p variants={fadeAnimation}>
-          Lets colobarate together to create something <br />
+          Lets colobarate together to create something<span className='break' />
           beautiful and amazing!
         </motion.p>
         <Link to='/contact'>
@@ -49,15 +49,22 @@ const bannerSection = () => {
   );
 };
 
-const StyledBanner = styled(StyledLayout)``;
+const StyledBanner = styled(StyledLayout)`
+  @media (min-width: 1440px) {
+    .break {
+      display: block;
+    }
+  }
+
+`;
 
 const StyledBannerImage = styled(StyledImage)`
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
-  @media (max-width: 1440px) {
+  @media (min-width: 1440px) {
     img {
-      width: 85%;
+      width: 80%;
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
   }
