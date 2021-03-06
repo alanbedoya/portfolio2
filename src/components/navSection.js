@@ -22,18 +22,18 @@ const NavSection = () => {
         <span />
         <span />
       </Hamburger>
-      <ul>
+      <Menu isOpen={isOpen}>
         <li>
           <Link to='/'>1. About Me</Link>
-          <Styledline
+          <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '61%' : '0%' }}
+            animate={{ width: pathname === '/' ? '6.5em' : '0%' }}
           />
         </li>
         <li>
           <Link to='/work'>2. My Work</Link>
-          <Styledline
+          <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
             animate={{ width: pathname === '/work' ? '61%' : '0%' }}
@@ -41,7 +41,7 @@ const NavSection = () => {
         </li>
         <li>
           <Link to='/contact'>3. Contact Me</Link>
-          <Styledline
+          <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%', left: '18%' }}
             animate={{ width: pathname === '/contact' ? '65%' : '0%' }}
@@ -52,7 +52,7 @@ const NavSection = () => {
             4. Resume
           </Link>
         </li>
-      </ul>
+      </Menu>
     </StyledNav>
   );
 };
@@ -60,6 +60,7 @@ const NavSection = () => {
 const StyledNav = styled.nav`
   min-height: 10vh;
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -67,23 +68,44 @@ const StyledNav = styled.nav`
   background-color: #282828;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 
   img {
     display: flex;
     justify-content: flex-start;
+    position: relative;
     width: 4rem;
     height: 4rem;
+    @media (max-width: 800px) {
+      height: 3.5rem;
+    }
   }
+`;
 
-  ul {
+const Menu = styled.ul `
     display: flex;
     list-style: none;
-  }
+    @media (max-width: 800px) {
+      flex-direction: column;
+      overflow: hidden;
+      width: 100%;
+      max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
+      transition: all 0.3s ease-in;
+    }
+
 
   li {
     padding: 4vh;
-    position: relative;
+    position: relative; 
+    text-align:center;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      height: auto;
+    }
   }
 
   a {
@@ -95,23 +117,26 @@ const StyledNav = styled.nav`
   }
 `;
 
+
+
 const Hamburger = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-top: 10px;
   span {
     height: 2px;
-    width: 25px;
+    width: 30px;
     background: #89c9b8;
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: flex;
   }
  `;  
 
-const Styledline = styled(motion.div)`
+const StyledLine = styled(motion.div)`
   height: 0.3rem;
   background: #89c9b8;
   position: absolute;
@@ -123,6 +148,11 @@ const Styledline = styled(motion.div)`
 
   @media (max-width: 1200px) {
     left: 21%;
+  }
+
+  @media (max-width: 800px) {
+      
+      left: 38%;
   }
 `;
 
