@@ -28,7 +28,7 @@ const NavSection = () => {
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '6.5em' : '0%' }}
+            animate={{ width: pathname === '/' ? '92px' : '0%' }}
           />
         </li>
         <li>
@@ -36,15 +36,15 @@ const NavSection = () => {
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '61%' : '0%' }}
+            animate={{ width: pathname === '/work' ? '89px' : '0%' }}
           />
         </li>
         <li>
           <Link to='/contact'>3. Contact Me</Link>
           <StyledLine
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%', left: '18%' }}
-            animate={{ width: pathname === '/contact' ? '65%' : '0%' }}
+            initial={{ width: '0%'}}
+            animate={{ width: pathname === '/contact' ? '111px' : '0%' }}
           />
         </li>
         <li>
@@ -64,13 +64,17 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10rem;
+  padding: 0 5rem;
   background-color: #282828;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+
+  @media (max-width: 800px) {
+     padding-top: 0.5rem;
+    }
 
   img {
     display: flex;
@@ -97,21 +101,26 @@ const Menu = styled.ul `
 
 
   li {
-    padding: 4vh;
+    padding: 2rem;
     position: relative; 
-    text-align:center;
+    text-align: center;
     @media (max-width: 800px) {
       flex-direction: column;
       align-items: center;
-      padding: 1rem 0;
+      padding: 1rem;
       height: auto;
+    }
+
+    @media (max-width: 800px) {
+      text-align: left;
+      padding-left: 15rem;
     }
   }
 
   a {
     color: white;
     text-decoration: none;
-    @media (max-width: 1440px) {
+    @media (max-width: 800px) {
       font-size: 1rem;
     }
   }
@@ -140,19 +149,18 @@ const StyledLine = styled(motion.div)`
   height: 0.3rem;
   background: #89c9b8;
   position: absolute;
-  left: 22%;
+  /* left: 22%; */
 
-  @media (max-width: 1440px) {
-    left: 20%;
-  }
+  /* @media (min-width: 1440px) {
+    scale: 20%;
+  } */
 
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     left: 21%;
-  }
+  } */
 
-  @media (max-width: 800px) {
-      
-      left: 38%;
+  @media (max-width: 800px) { 
+      left: 15rem;
   }
 `;
 

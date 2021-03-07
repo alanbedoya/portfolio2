@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     span {
