@@ -24,7 +24,7 @@ const NavSection = () => {
       </Hamburger>
       <Menu isOpen={isOpen}>
         <li>
-          <Link to='/'>1. About Me</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/'>1. About Me</Link>
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -32,7 +32,7 @@ const NavSection = () => {
           />
         </li>
         <li>
-          <Link to='/work'>2. My Work</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/work'>2. My Work</Link>
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -40,7 +40,7 @@ const NavSection = () => {
           />
         </li>
         <li>
-          <Link to='/contact'>3. Contact Me</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/contact'>3. Contact Me</Link>
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%'}}
@@ -48,7 +48,7 @@ const NavSection = () => {
           />
         </li>
         <li>
-          <Link to={resume} target='opener'>
+          <Link onClick={() => setIsOpen(!isOpen)} to={resume} target='opener'>
             4. Resume
           </Link>
         </li>
@@ -96,7 +96,7 @@ const Menu = styled.ul `
       overflow: hidden;
       width: 100%;
       max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
-      transition: all 0.3s ease-in;
+      transition: all 0.7s ease-in;
     }
 
 
