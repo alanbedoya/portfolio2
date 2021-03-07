@@ -72,7 +72,7 @@ const StyledNav = styled.nav`
   right: 0;
   z-index: 10;
 
-  @media (max-width: 800px) {
+  @media (max-width: 847px) {
      padding-top: 0.5rem;
     }
 
@@ -82,7 +82,7 @@ const StyledNav = styled.nav`
     position: relative;
     width: 4rem;
     height: 4rem;
-    @media (max-width: 800px) {
+    @media (max-width: 847px) {
       height: 3.5rem;
     }
   }
@@ -91,7 +91,7 @@ const StyledNav = styled.nav`
 const Menu = styled.ul `
     display: flex;
     list-style: none;
-    @media (max-width: 800px) {
+    @media (max-width: 847px) {
       flex-direction: column;
       overflow: hidden;
       width: 100%;
@@ -104,14 +104,14 @@ const Menu = styled.ul `
     padding: 2rem;
     position: relative; 
     text-align: center;
-    @media (max-width: 800px) {
+    @media (max-width: 847px) {
       flex-direction: column;
       align-items: center;
       padding: 1rem;
       height: auto;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 847px) {
       text-align: left;
       padding-left: 15rem;
     }
@@ -120,7 +120,7 @@ const Menu = styled.ul `
   a {
     color: white;
     text-decoration: none;
-    @media (max-width: 800px) {
+    @media (max-width: 1200px) {
       font-size: 1rem;
     }
   }
@@ -140,7 +140,7 @@ const Hamburger = styled.div`
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 847px) {
     display: flex;
   }
  `;  
@@ -159,7 +159,7 @@ const StyledLine = styled(motion.div)`
     left: 21%;
   } */
 
-  @media (max-width: 800px) { 
+  @media (max-width: 847px) { 
       left: 15rem;
   }
 `;
