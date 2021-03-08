@@ -22,11 +22,11 @@ const bannerSection = () => {
           </StyledHidden>
           <StyledHidden>
             <motion.h2 variants={titleAnimation}>
-              I'm <span>Alan</span>
+              I'm <span>Alan</span>,
             </motion.h2>
           </StyledHidden>
           <StyledHidden>
-            <motion.h2 variants={titleAnimation}>Bedoya</motion.h2>
+            <motion.h2 variants={titleAnimation}>A Software Developer</motion.h2>
           </StyledHidden>
         </div>
         <motion.p variants={fadeAnimation}>

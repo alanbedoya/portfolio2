@@ -22,7 +22,7 @@ export const pageAnimation = {
 };
 
 export const titleAnimation = {
-  hidden: { y: 200 },
+  hidden: { y: 220 },
   show: {
     y: 0,
     transition: {
@@ -41,9 +41,9 @@ export const fadeAnimation = {
 };
 
 export const photoAnimation = {
-  hidden: { scale: 1.5, opacity: 0 },
+  hidden: { scale: 1.2, opacity: 0 },
   show: {
-    scale: 1.1,
+    scale: 1,
     opacity: 1,
     transition: {
       ease: 'easeOut',

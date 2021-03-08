@@ -16,7 +16,7 @@ const FooterSection = () => {
         animate='show'
       >
         <p className='copyrightText'>
-          Copyright © 2020 All Rights Reserved by Alan Bedoya
+          Copyright © 2021 All Rights Reserved by Alan Bedoya
         </p>
         <StyledIcons>
           <li>
