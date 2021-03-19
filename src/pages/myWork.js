@@ -24,36 +24,80 @@ const myWork = () => {
       animate='show'
       style={{ background: '#b67171' }}
     >
-  
       <StyledProject>
         <motion.h2 variants={fadeAnimation}>Project 1</motion.h2>
         <motion.div variants={lineAnimation} className='line'></motion.div>
         <StyledContainer>
           <motion.img variants={photoAnimation} src={athlete} alt='athlete' />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tellus molestie nunc non blandit massa enim. Sagittis orci a scelerisque purus semper eget duis at tellus. Elementum eu facilisis sed odio morbi quis commodo. Pellentesque elit eget gravida cum sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis. Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis donec et odio. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Eget mi proin sed libero enim sed faucibus. Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Feugiat scelerisque varius morbi enim nunc.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
+            tellus molestie nunc non blandit massa enim. Sagittis orci a
+            scelerisque purus semper eget duis at tellus. Elementum eu facilisis
+            sed odio morbi quis commodo. Pellentesque elit eget gravida cum
+            sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis.
+            Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis
+            donec et odio. Placerat vestibulum lectus mauris ultrices eros in
+            cursus turpis massa. Eget mi proin sed libero enim sed faucibus.
+            Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus
+            et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
+            purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
+            viverra justo. Feugiat scelerisque varius morbi enim nunc.
+          </p>
         </StyledContainer>
-        <button className="button1">Live Site</button>
-        <button className="button2">Github</button>
+        <button className='button1'>Live Site</button>
+        <button className='button2'>Github</button>
       </StyledProject>
       <StyledProject>
         <h2>Project 2</h2>
         <div className='line'></div>
         <StyledContainer>
           <img src={racer} alt='racer' />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tellus molestie nunc non blandit massa enim. Sagittis orci a scelerisque purus semper eget duis at tellus. Elementum eu facilisis sed odio morbi quis commodo. Pellentesque elit eget gravida cum sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis. Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis donec et odio. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Eget mi proin sed libero enim sed faucibus. Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Feugiat scelerisque varius morbi enim nunc.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
+            tellus molestie nunc non blandit massa enim. Sagittis orci a
+            scelerisque purus semper eget duis at tellus. Elementum eu facilisis
+            sed odio morbi quis commodo. Pellentesque elit eget gravida cum
+            sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis.
+            Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis
+            donec et odio. Placerat vestibulum lectus mauris ultrices eros in
+            cursus turpis massa. Eget mi proin sed libero enim sed faucibus.
+            Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus
+            et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
+            purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
+            viverra justo. Feugiat scelerisque varius morbi enim nunc.
+          </p>
         </StyledContainer>
-        <button className="button1">Live Site</button>
-        <button className="button2">Github</button>
+        <button className='button1'>Live Site</button>
+        <button className='button2'>Github</button>
       </StyledProject>
       <StyledProject>
         <h2>Project 3</h2>
         <div className='line'></div>
         <StyledContainer>
           <img src={coffee} alt='coffee' />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tellus molestie nunc non blandit massa enim. Sagittis orci a scelerisque purus semper eget duis at tellus. Elementum eu facilisis sed odio morbi quis commodo. Pellentesque elit eget gravida cum sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis. Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis donec et odio. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Eget mi proin sed libero enim sed faucibus. Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Feugiat scelerisque varius morbi enim nunc.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
+            tellus molestie nunc non blandit massa enim. Sagittis orci a
+            scelerisque purus semper eget duis at tellus. Elementum eu facilisis
+            sed odio morbi quis commodo. Pellentesque elit eget gravida cum
+            sociis natoque penatibus et. Proin sagittis nisl rhoncus mattis.
+            Urna condimentum mattis pellentesque id nibh tortor id. Nisl nisi
+            scelerisque eu ultrices vitae auctor eu augue ut. Consequat ac felis
+            donec et odio. Placerat vestibulum lectus mauris ultrices eros in
+            cursus turpis massa. Eget mi proin sed libero enim sed faucibus.
+            Vestibulum rhoncus est pellentesque elit. Morbi tristique senectus
+            et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
+            purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
+            viverra justo. Feugiat scelerisque varius morbi enim nunc.
+          </p>
         </StyledContainer>
-        <button className="button1">Live Site</button>
-        <button className="button2">Github</button>
+        <button className='button1'>Live Site</button>
+        <button className='button2'>Github</button>
       </StyledProject>
       <Scroll />
     </StyledWork>
@@ -69,7 +113,6 @@ const StyledWork = styled(motion.div)`
   h2 {
     padding: 1rem 0;
   }
-  
 `;
 
 const StyledProject = styled.div`
@@ -84,7 +127,7 @@ const StyledProject = styled.div`
     background: #89c9b8;
     margin-bottom: 3rem;
   }
-  
+
   .button1 {
     margin: 0 2rem 0 45rem;
   }
@@ -93,11 +136,10 @@ const StyledProject = styled.div`
     .button1 {
       margin-left: 55rem;
     }
-  } 
-
+  }
 `;
 
-const StyledContainer = styled.div `
+const StyledContainer = styled.div`
   display: flex;
   padding: 0 2vh;
 
@@ -118,11 +160,8 @@ const StyledContainer = styled.div `
     img {
       width: 80%;
     }
-
-    }
-  } 
-
-`
+  }
+`;
 
 // const StyledLoading1 = styled(motion.div)`
 //   position: fixed;

@@ -100,7 +100,7 @@ const StyledContact = styled(motion.div)`
 
     textarea {
       padding: 1rem;
-      height: 10rem;
+      height: 12rem;
       text-align: left;
       border: solid 1px #b3aca7;
       border-bottom: none;
