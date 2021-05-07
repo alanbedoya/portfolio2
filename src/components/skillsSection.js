@@ -2,7 +2,6 @@ import React from 'react';
 import {
   SiJavascript,
   SiReact,
-  SiVueDotJs,
   SiTypescript,
   SiHtml5,
   SiCss3,
@@ -12,13 +11,12 @@ import {
   SiNodeDotJs,
   SiStyledComponents,
   SiGit,
-  SiLaravel,
   SiFirebase,
-  SiMongodb,
-  SiPostgresql,
   SiBootstrap,
+  SiMongodb,
   SiNextDotJs,
 } from 'react-icons/si';
+import { AiOutlineAntDesign } from 'react-icons/ai';
 import styled from 'styled-components';
 import { StyledLayout } from '../styles';
 
@@ -41,7 +39,6 @@ const SkillsSection = () => {
         <ul>
           <SiJavascript size='15vh' />
           <SiReact size='15vh' />
-          <SiVueDotJs size='15vh' />
           <SiTypescript size='15vh' />
           <SiHtml5 size='15vh' />
           <SiCss3 size='15vh' />
@@ -51,10 +48,9 @@ const SkillsSection = () => {
           <SiNodeDotJs size='15vh' />
           <SiStyledComponents size='15vh' />
           <SiGit size='15vh' />
-          <SiLaravel size='15vh' />
           <SiFirebase size='15vh' />
           <SiMongodb size='15vh' />
-          <SiPostgresql size='15vh' />
+          <AiOutlineAntDesign size='15vh' />
           <SiBootstrap size='15vh' />
           <SiNextDotJs size='15vh' />
         </ul>
@@ -92,10 +88,11 @@ const StyledSkills = styled(StyledLayout)`
 
 const StyledIconGrid = styled.div`
   ul {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 16em 16em 16em 16em;
+    grid-gap: 1em;
     svg {
       flex: 0 15%;
       margin-bottom: 2rem;
