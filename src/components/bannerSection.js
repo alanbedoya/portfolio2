@@ -10,9 +10,9 @@ import {
 } from '../styles';
 import { titleAnimation, fadeAnimation, photoAnimation } from '../animation';
 import { motion } from 'framer-motion';
-import Wave from './wave';
+import { Wave } from '../components';
 
-const bannerSection = () => {
+export const BannerSection = () => {
   return (
     <StyledBanner>
       <StyledDescription>
@@ -26,11 +26,14 @@ const bannerSection = () => {
             </motion.h2>
           </StyledHidden>
           <StyledHidden>
-            <motion.h2 variants={titleAnimation}>A Software Developer</motion.h2>
+            <motion.h2 variants={titleAnimation}>
+              A Software Developer
+            </motion.h2>
           </StyledHidden>
         </div>
         <motion.p variants={fadeAnimation}>
-          Lets colobarate together to create something<span className='break' />
+          Lets colobarate together to create something
+          <span className='break' />
           beautiful and amazing!
         </motion.p>
         <Link to='/contact'>
@@ -55,7 +58,6 @@ const StyledBanner = styled(StyledLayout)`
       display: block;
     }
   }
-
 `;
 
 const StyledBannerImage = styled(StyledImage)`
@@ -69,5 +71,3 @@ const StyledBannerImage = styled(StyledImage)`
     }
   }
 `;
-
-export default bannerSection;

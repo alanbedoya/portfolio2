@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Scroll from '../components/scroll';
-import { Link } from 'react-router-dom';
+import { Scroll } from '../components';
 import athlete from '../assets/img/athlete-small.png';
 import racer from '../assets/img/theracer-small.png';
 import coffee from '../assets/img/coffee.jpg';
@@ -15,7 +14,7 @@ import {
   // loadingAnimation,
 } from '../animation';
 
-const myWork = () => {
+export const MyWork = () => {
   return (
     <StyledWork
       variants={pageAnimation}
@@ -186,5 +185,3 @@ const StyledContainer = styled.div`
 // const StyledLoading4 = styled(StyledLoading1)`
 //   background: #8effa0;
 // `;
-
-export default myWork;

@@ -5,7 +5,7 @@ import { ProjectState } from '../projectState';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const ProjectDetail = () => {
+export const ProjectDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
   const [projects] = useState(ProjectState);
@@ -119,4 +119,3 @@ const StyledDisplay = styled.div`
     object-fit: cover;
   }
 `;
-export default ProjectDetail;

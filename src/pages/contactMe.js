@@ -1,12 +1,12 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import styled from 'styled-components';
-import Scroll from '../components/scroll';
+import { Scroll } from '../components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 import { useAlert } from 'react-alert';
 
-const contactMe = () => {
+export const ContactMe = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const alert = useAlert();
 
@@ -125,5 +125,3 @@ const StyledContact = styled(motion.div)`
     }
   }
 `;
-
-export default contactMe;

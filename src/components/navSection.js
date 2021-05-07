@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/img/logo.svg';
 import resume from '../assets/resume/resume.pdf';
 import styled from 'styled-components';
@@ -6,11 +6,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-const NavSection = () => {
+export const NavSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
   return (
-    
     <StyledNav>
       <div>
         <Link id='logo' to='/'>
@@ -24,7 +23,9 @@ const NavSection = () => {
       </Hamburger>
       <Menu isOpen={isOpen}>
         <li>
-          <Link onClick={() => setIsOpen(!isOpen)} to='/'>1. About Me</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/'>
+            1. About Me
+          </Link>
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -32,7 +33,9 @@ const NavSection = () => {
           />
         </li>
         <li>
-          <Link onClick={() => setIsOpen(!isOpen)} to='/work'>2. My Work</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/work'>
+            2. My Work
+          </Link>
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -40,10 +43,12 @@ const NavSection = () => {
           />
         </li>
         <li>
-          <Link onClick={() => setIsOpen(!isOpen)} to='/contact'>3. Contact Me</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to='/contact'>
+            3. Contact Me
+          </Link>
           <StyledLine
             transition={{ duration: 0.75 }}
-            initial={{ width: '0%'}}
+            initial={{ width: '0%' }}
             animate={{ width: pathname === '/contact' ? '111px' : '0%' }}
           />
         </li>
@@ -73,8 +78,8 @@ const StyledNav = styled.nav`
   z-index: 10;
 
   @media (max-width: 847px) {
-     padding-top: 0.5rem;
-    }
+    padding-top: 0.5rem;
+  }
 
   img {
     display: flex;
@@ -88,21 +93,20 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Menu = styled.ul `
-    display: flex;
-    list-style: none;
-    @media (max-width: 847px) {
-      flex-direction: column;
-      overflow: hidden;
-      width: 100%;
-      max-height: ${({isOpen}) => (isOpen ? "300px" : "0")};
-      transition: all 0.7s ease-in;
-    }
-
+const Menu = styled.ul`
+  display: flex;
+  list-style: none;
+  @media (max-width: 847px) {
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+    transition: all 0.7s ease-in;
+  }
 
   li {
     padding: 2rem;
-    position: relative; 
+    position: relative;
     text-align: center;
     @media (max-width: 847px) {
       flex-direction: column;
@@ -126,8 +130,6 @@ const Menu = styled.ul `
   }
 `;
 
-
-
 const Hamburger = styled.div`
   display: none;
   flex-direction: column;
@@ -143,7 +145,7 @@ const Hamburger = styled.div`
   @media (max-width: 847px) {
     display: flex;
   }
- `;  
+`;
 
 const StyledLine = styled(motion.div)`
   height: 0.3rem;
@@ -159,9 +161,7 @@ const StyledLine = styled(motion.div)`
     left: 21%;
   } */
 
-  @media (max-width: 847px) { 
-      left: 15rem;
+  @media (max-width: 847px) {
+    left: 15rem;
   }
 `;
-
-export default NavSection;

@@ -6,7 +6,7 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const FooterSection = () => {
+export const FooterSection = () => {
   return (
     <div className='classes.root'>
       <StyledFooter
@@ -83,5 +83,3 @@ const StyledIcons = styled.ul`
     }
   }
 `;
-
-export default FooterSection;

@@ -20,7 +20,7 @@ import { AiOutlineAntDesign } from 'react-icons/ai';
 import styled from 'styled-components';
 import { StyledLayout } from '../styles';
 
-const SkillsSection = () => {
+export const SkillsSection = () => {
   return (
     <StyledSkills>
       <h2>
@@ -99,5 +99,3 @@ const StyledIconGrid = styled.div`
     }
   }
 `;
-
-export default SkillsSection;

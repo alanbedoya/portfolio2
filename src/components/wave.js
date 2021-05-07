@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const wave = () => {
+export const Wave = () => {
   return (
     <StyledWave
       viewBox='0 0 1440 363'
@@ -32,5 +32,3 @@ const StyledWave = styled.svg`
   margin-right: auto;
   z-index: 1;
 `;
-
-export default wave;

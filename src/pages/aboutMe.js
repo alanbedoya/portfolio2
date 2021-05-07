@@ -1,12 +1,14 @@
 import React from 'react';
-import BannerSection from '../components/bannerSection';
-import AboutSection from '../components/aboutSection';
-import SkillsSection from '../components/skillsSection';
-import Scroll from '../components/scroll';
+import {
+  BannerSection,
+  AboutSection,
+  SkillsSection,
+  Scroll,
+} from '../components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const aboutMe = () => {
+export const AboutMe = () => {
   return (
     <motion.div
       variants={pageAnimation}
@@ -22,5 +24,3 @@ const aboutMe = () => {
     </motion.div>
   );
 };
-
-export default aboutMe;
