@@ -9,10 +9,11 @@ import {
   SiTailwindcss,
   SiGraphql,
   SiNodeDotJs,
+  SiRedux,
   SiStyledComponents,
   SiGit,
   SiFirebase,
-  SiBootstrap,
+  SiApollographql,
   SiMongodb,
   SiNextDotJs,
 } from 'react-icons/si';
@@ -48,10 +49,11 @@ export const SkillsSection = () => {
           <SiNodeDotJs size='15vh' />
           <SiStyledComponents size='15vh' />
           <SiGit size='15vh' />
+          <SiRedux size='15vh' />
           <SiFirebase size='15vh' />
           <SiMongodb size='15vh' />
           <AiOutlineAntDesign size='15vh' />
-          <SiBootstrap size='15vh' />
+          <SiApollographql size='15vh' />
           <SiNextDotJs size='15vh' />
         </ul>
       </StyledIconGrid>
@@ -91,8 +93,9 @@ const StyledIconGrid = styled.div`
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 16em 16em 16em 16em;
+    grid-template-columns: 16em 16em 16em 16em 16em;
     grid-gap: 1em;
+
     svg {
       flex: 0 15%;
       margin-bottom: 2rem;

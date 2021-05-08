@@ -53,7 +53,16 @@ export const BannerSection = () => {
 };
 
 const StyledBanner = styled(StyledLayout)`
-  @media (min-width: 1440px) {
+  @media (max-width: 20em) {
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+    justify-content: center;
+    justify-items: center;
+    padding-right: 0;
+  }
+
+  @media (min-width: 90em) {
     .break {
       display: block;
     }
