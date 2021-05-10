@@ -31,4 +31,8 @@ const StyledWave = styled.svg`
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
+
+  @media (max-width: 53em) {
+    top: 18rem;
+  }
 `;

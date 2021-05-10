@@ -66,12 +66,12 @@ const StyledNav = styled.nav`
   min-height: 10vh;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
   background-color: #282828;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -87,7 +87,6 @@ const StyledNav = styled.nav`
 
   @media (max-width: 53em) {
     padding: 0.5rem 1.25rem;
-
     img {
       height: 3.5rem;
     }
