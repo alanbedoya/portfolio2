@@ -77,17 +77,18 @@ const StyledNav = styled.nav`
   right: 0;
   z-index: 10;
 
-  @media (max-width: 847px) {
-    padding-top: 0.5rem;
-  }
-
   img {
     display: flex;
     justify-content: flex-start;
     position: relative;
     width: 4rem;
     height: 4rem;
-    @media (max-width: 847px) {
+  }
+
+  @media (max-width: 53em) {
+    padding: 0.5rem 1.25rem;
+
+    img {
       height: 3.5rem;
     }
   }
@@ -96,37 +97,35 @@ const StyledNav = styled.nav`
 const Menu = styled.ul`
   display: flex;
   list-style: none;
-  @media (max-width: 847px) {
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
-    transition: all 0.7s ease-in;
-  }
 
   li {
     padding: 2rem;
     position: relative;
     text-align: center;
-    @media (max-width: 847px) {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      height: auto;
-    }
-
-    @media (max-width: 847px) {
-      text-align: left;
-      padding-left: 15rem;
-    }
   }
 
   a {
     color: white;
     text-decoration: none;
-    @media (max-width: 1200px) {
+    @media (max-width: 75em) {
       font-size: 1rem;
     }
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    text-align: left;
+  }
+
+  @media (max-width: 53em) {
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
+    transition: all 0.7s ease-in;
   }
 `;
 
@@ -135,6 +134,7 @@ const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
   margin-top: 10px;
+
   span {
     height: 2px;
     width: 30px;
@@ -142,7 +142,8 @@ const Hamburger = styled.div`
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 847px) {
+
+  @media (max-width: 53em) {
     display: flex;
   }
 `;
@@ -151,17 +152,11 @@ const StyledLine = styled(motion.div)`
   height: 0.3rem;
   background: #89c9b8;
   position: absolute;
-  /* left: 22%; */
 
-  /* @media (min-width: 1440px) {
-    scale: 20%;
-  } */
-
-  /* @media (max-width: 1200px) {
-    left: 21%;
-  } */
-
-  @media (max-width: 847px) {
-    left: 15rem;
+  @media (max-width: 53em) {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    margin: 0.625rem;
   }
 `;
