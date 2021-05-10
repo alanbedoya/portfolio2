@@ -150,13 +150,13 @@ const Hamburger = styled.div`
 
 const StyledLine = styled(motion.div)`
   height: 0.3rem;
+  bottom: 0;
+  margin: 0.625rem;
   background: #89c9b8;
   position: absolute;
 
   @media (max-width: 53em) {
     display: flex;
     justify-content: center;
-    bottom: 0;
-    margin: 0.625rem;
   }
 `;
