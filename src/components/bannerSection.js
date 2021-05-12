@@ -53,13 +53,13 @@ export const BannerSection = () => {
 };
 
 const StyledBanner = styled(StyledLayout)`
-  @media (max-width: 20em) {
+  @media (max-width: 53em) {
     display: flex;
     flex-direction: column;
-    font-size: x-small;
     justify-content: center;
     justify-items: center;
     padding-right: 0;
+    padding-left: 1.5rem;
   }
 
   @media (min-width: 90em) {
@@ -73,10 +73,18 @@ const StyledBannerImage = styled(StyledImage)`
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 90em) {
     img {
       width: 80%;
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
+  }
+
+  @media (max-width: 53em) {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding-left: 0;
   }
 `;
