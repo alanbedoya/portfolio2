@@ -60,6 +60,10 @@ const StyledBanner = styled(StyledLayout)`
     justify-items: center;
     padding-right: 0;
     padding-left: 1.5rem;
+
+    button {
+      margin-bottom: 1rem;
+    }
   }
 
   @media (min-width: 90em) {
