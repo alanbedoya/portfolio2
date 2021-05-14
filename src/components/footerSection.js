@@ -15,9 +15,7 @@ export const FooterSection = () => {
         exit='exit'
         animate='show'
       >
-        <p className='copyrightText'>
-          Copyright © 2021 All Rights Reserved by Alan Bedoya
-        </p>
+        <p className='copyrightText'>© 2021 Alan Bedoya</p>
         <StyledIcons>
           <li>
             <a href='https://github.com/alanbedoya'>
@@ -64,6 +62,12 @@ const StyledFooter = styled(motion.footer)`
     font-size: 1rem;
     padding: 0;
     margin: 0;
+  }
+
+  @media (max-width: 53em) {
+    .copyrightText {
+      font-size: 0.6rem;
+    }
   }
 `;
 
