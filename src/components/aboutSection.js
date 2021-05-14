@@ -42,7 +42,6 @@ const StyledAbout = styled(StyledLayout)`
 
 const StyledCard = styled.div`
   display: flex;
-  /* flex-flow: column-reverse wrap; */
 
   img {
     width: 50%;
@@ -51,6 +50,21 @@ const StyledCard = styled.div`
   }
 
   p {
-    padding: 0 0 0 1rem;
+    padding-left: 1rem;
+  }
+
+  @media (max-width: 53em) {
+    flex-flow: column wrap;
+
+    P {
+      padding-left: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
   }
 `;

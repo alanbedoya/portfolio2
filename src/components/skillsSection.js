@@ -25,7 +25,7 @@ export const SkillsSection = () => {
   return (
     <StyledSkills>
       <h2>
-        The Skill & <br />
+        The Skills & <br />
         Tools I <span>Know</span>
       </h2>
       <p>
@@ -68,24 +68,6 @@ const StyledSkills = styled(StyledLayout)`
     padding-bottom: 2rem;
     font-weight: lighter;
   }
-
-  .faq-line {
-    background: #cccccc;
-    height: 0.2rem;
-    margin: 2rem 0rem;
-    width: 100%;
-  }
-
-  .question {
-    padding: 3rem 0rem;
-    cursor: pointer;
-  }
-  .answer {
-    padding: 2rem 0rem;
-    p {
-      padding: 1rem 0rem;
-    }
-  }
 `;
 
 const StyledIconGrid = styled.div`
@@ -99,6 +81,18 @@ const StyledIconGrid = styled.div`
     svg {
       flex: 0 15%;
       margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 53em) {
+    ul {
+      grid-template-columns: 3em 3em 3em 3em 3em;
+      grid-gap: 0.8rem;
+    }
+
+    svg {
+      width: 8vh;
+      height: 8vh;
     }
   }
 `;

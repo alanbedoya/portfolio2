@@ -7,12 +7,14 @@ export const StyledLayout = styled.div`
   justify-content: space-between;
   padding: 5rem;
   color: white;
+
+  @media (max-width: 53em) {
+    padding: 5rem 1rem 2rem 1rem;
+  }
 `;
 
 export const StyledDescription = styled.div`
   flex: 1;
-  padding-right: 5rem;
-  z-index: 2;
 
   h2 {
     font-weight: lighter;
