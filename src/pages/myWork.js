@@ -10,8 +10,6 @@ import {
   fadeAnimation,
   photoAnimation,
   lineAnimation,
-  // loadingContianer,
-  // loadingAnimation,
 } from '../animation';
 
 export const MyWork = () => {
@@ -43,10 +41,11 @@ export const MyWork = () => {
             et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
+            <br />
+            <button className='button1'>Live Site</button>
+            <button className='button2'>Github</button>
           </p>
         </StyledContainer>
-        <button className='button1'>Live Site</button>
-        <button className='button2'>Github</button>
       </StyledProject>
       <StyledProject>
         <h2>Project 2</h2>
@@ -68,10 +67,11 @@ export const MyWork = () => {
             et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
+            <br />
+            <button className='button1'>Live Site</button>
+            <button className='button2'>Github</button>
           </p>
         </StyledContainer>
-        <button className='button1'>Live Site</button>
-        <button className='button2'>Github</button>
       </StyledProject>
       <StyledProject>
         <h2>Project 3</h2>
@@ -93,10 +93,11 @@ export const MyWork = () => {
             et netus et malesuada fames ac. Ultrices sagittis orci a scelerisque
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
+            <br />
+            <button className='button1'>Live Site</button>
+            <button className='button2'>Github</button>
           </p>
         </StyledContainer>
-        <button className='button1'>Live Site</button>
-        <button className='button2'>Github</button>
       </StyledProject>
       <Scroll />
     </StyledWork>
@@ -127,15 +128,15 @@ const StyledProject = styled.div`
     margin-bottom: 3rem;
   }
 
-  .button1 {
+  /* .button1 {
     margin: 0 2rem 0 45rem;
   }
 
-  @media (min-width: 1441px) {
+  @media (min-width: 90em) {
     .button1 {
       margin-left: 55rem;
     }
-  }
+  } */
 `;
 
 const StyledContainer = styled.div`
@@ -149,8 +150,18 @@ const StyledContainer = styled.div`
   }
 
   p {
-    padding-top: 0;
-    padding-left: 2vh;
+    padding: 0 0 0 1rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    &.button1 {
+      margin-left: 5rem;
+    }
+
+    &.button2 {
+      margin-left: 1rem;
+    }
   }
 
   @media (min-width: 1441px) {
