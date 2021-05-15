@@ -58,6 +58,7 @@ const StyledBanner = styled(StyledLayout)`
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    padding-top: 7rem;
     padding-left: 1.5rem;
 
     button {

@@ -50,7 +50,9 @@ export const ContactMe = () => {
         <input type='email' name='email' placeholder='Email' />
         <input type='text' name='subject' placeholder='Subject' />
         <textarea name='message' placeholder='Message' />
-        <button type='submit'> Send </button>
+        <StyledButton>
+          <button type='submit'> Send </button>
+        </StyledButton>
       </form>
       <Scroll />
     </StyledContact>
@@ -62,14 +64,9 @@ const StyledContact = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 10rem;
+  padding: 3rem 10rem;
   color: white;
-  padding-bottom: 100px;
-
-  @media (max-width: 1440px) {
-    min-height: 80vh;
-    padding-bottom: 138px;
-  }
+  padding-bottom: 12rem;
 
   /* .fieldLeft {
     flex-flow: row wrap;
@@ -114,7 +111,7 @@ const StyledContact = styled(motion.div)`
       }
     }
 
-    button {
+    /* button {
       font-size: 1rem;
       justify-content: center;
       align-items: center;
@@ -122,6 +119,27 @@ const StyledContact = styled(motion.div)`
       margin-top: 2vh;
       margin-left: 24vh;
       margin-bottom: 2vh;
+    } */
+  }
+
+  @media (max-width: 53em) {
+    flex-flow: column wrap;
+    padding: 7rem 1rem 6rem 1rem;
+
+    .contact-form {
+      margin-top: 4rem;
+      width: 88%;
     }
   }
+
+  @media (max-width: 90em) {
+    /* min-height: 80vh; */
+    /* padding-bottom: 138px; */
+  }
+`;
+
+const StyledButton = styled.span`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 `;

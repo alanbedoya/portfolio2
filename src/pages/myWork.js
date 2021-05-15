@@ -121,8 +121,7 @@ const StyledWork = styled(motion.div)`
   }
 
   @media (max-width: 53em) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 7rem 1rem 0 1rem;
   }
 `;
 
