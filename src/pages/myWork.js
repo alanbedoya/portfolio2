@@ -174,7 +174,7 @@ const StyledContainer = styled.div`
   }
 `;
 
-const StyledButtons = styled.div`
+const StyledButtons = styled.span`
   display: flex;
   justify-content: center;
 
