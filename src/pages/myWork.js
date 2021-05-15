@@ -158,12 +158,12 @@ const StyledContainer = styled.div`
     padding: 0 0 0 1rem;
   }
 
-  @media (max-width: 53em) {
+  @media (max-width: 64em) {
     flex-direction: column;
 
     img {
       width: 100%;
-      height: 100%;
+      height: 40%;
       margin-bottom: 2rem;
     }
 
