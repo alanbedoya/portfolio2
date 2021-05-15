@@ -26,7 +26,7 @@ export const MyWork = () => {
         <motion.div variants={lineAnimation} className='line'></motion.div>
         <StyledContainer>
           <motion.img variants={photoAnimation} src={athlete} alt='athlete' />
-          <p>
+          <motion.p variants={fadeAnimation}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
             tellus molestie nunc non blandit massa enim. Sagittis orci a
@@ -44,7 +44,7 @@ export const MyWork = () => {
             <br />
             <button className='button1'>Live Site</button>
             <button className='button2'>Github</button>
-          </p>
+          </motion.p>
         </StyledContainer>
       </StyledProject>
       <StyledProject>
@@ -94,8 +94,10 @@ export const MyWork = () => {
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
             <br />
-            <button className='button1'>Live Site</button>
-            <button className='button2'>Github</button>
+            <StyledButtons>
+              <button className='button1'>Live Site</button>
+              <button className='button2'>Github</button>
+            </StyledButtons>
           </p>
         </StyledContainer>
       </StyledProject>
@@ -113,6 +115,11 @@ const StyledWork = styled(motion.div)`
   h2 {
     padding: 1rem 0;
   }
+
+  @media (max-width: 53em) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const StyledProject = styled.div`
@@ -128,15 +135,9 @@ const StyledProject = styled.div`
     margin-bottom: 3rem;
   }
 
-  /* .button1 {
-    margin: 0 2rem 0 45rem;
+  @media (max-width: 53em) {
+    margin-bottom: 7rem;
   }
-
-  @media (min-width: 90em) {
-    .button1 {
-      margin-left: 55rem;
-    }
-  } */
 `;
 
 const StyledContainer = styled.div`
@@ -153,46 +154,38 @@ const StyledContainer = styled.div`
     padding: 0 0 0 1rem;
   }
 
-  button {
-    margin-top: 2rem;
-    &.button1 {
-      margin-left: 5rem;
+  @media (max-width: 53em) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 2rem;
     }
 
+    p {
+      font-size: 1rem;
+    }
+  }
+`;
+
+const StyledButtons = styled.div`
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin-top: 2rem;
     &.button2 {
       margin-left: 1rem;
     }
   }
 
-  @media (min-width: 1441px) {
-    flex-flow: row-wrap;
-
-    img {
-      width: 80%;
+  @media (max-width: 53em) {
+    button {
+      padding: 1rem 1.6rem;
+      &.button2 {
+        margin-left: 0.5rem;
+      }
     }
   }
 `;
-
-// const StyledLoading1 = styled(motion.div)`
-//   position: fixed;
-//   left: 0;
-//   right: 0;
-//   margin-left: auto;
-//   margin-right: auto;
-//   top: 14%;
-//   height: 100vh;
-//   background-color: #fffebf;
-//   z-index: 2;
-// `;
-
-// const StyledLoading2 = styled(StyledLoading1)`
-//   background: #ff8efb;
-// `;
-
-// const StyledLoading3 = styled(StyledLoading1)`
-//   background: #8ed2ff;
-// `;
-
-// const StyledLoading4 = styled(StyledLoading1)`
-//   background: #8effa0;
-// `;
