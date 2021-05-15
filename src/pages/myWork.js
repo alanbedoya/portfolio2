@@ -42,8 +42,10 @@ export const MyWork = () => {
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
             <br />
-            <button className='button1'>Live Site</button>
-            <button className='button2'>Github</button>
+            <StyledButtons>
+              <button className='button1'>Live Site</button>
+              <button className='button2'>Github</button>
+            </StyledButtons>
           </motion.p>
         </StyledContainer>
       </StyledProject>
@@ -68,8 +70,10 @@ export const MyWork = () => {
             purus semper eget duis. Nisl rhoncus mattis rhoncus urna neque
             viverra justo. Feugiat scelerisque varius morbi enim nunc.
             <br />
-            <button className='button1'>Live Site</button>
-            <button className='button2'>Github</button>
+            <StyledButtons>
+              <button className='button1'>Live Site</button>
+              <button className='button2'>Github</button>
+            </StyledButtons>
           </p>
         </StyledContainer>
       </StyledProject>
@@ -165,6 +169,7 @@ const StyledContainer = styled.div`
 
     p {
       font-size: 1rem;
+      padding: 0;
     }
   }
 `;
