@@ -79,7 +79,7 @@ const StyledBannerImage = styled(StyledImage)`
 
   @media (min-width: 90em) {
     img {
-      width: 80%;
+      width: 70%;
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
   }

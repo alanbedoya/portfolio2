@@ -38,23 +38,23 @@ export const SkillsSection = () => {
       </p>
       <StyledIconGrid>
         <ul>
-          <SiJavascript size='15vh' />
-          <SiReact size='15vh' />
-          <SiTypescript size='15vh' />
-          <SiHtml5 size='15vh' />
-          <SiCss3 size='15vh' />
-          <SiSass size='15vh' />
-          <SiTailwindcss size='15vh' />
-          <SiGraphql size='15vh' />
-          <SiNodeDotJs size='15vh' />
-          <SiStyledComponents size='15vh' />
-          <SiGit size='15vh' />
-          <SiRedux size='15vh' />
-          <SiFirebase size='15vh' />
-          <SiMongodb size='15vh' />
-          <AiOutlineAntDesign size='15vh' />
-          <SiApollographql size='15vh' />
-          <SiNextDotJs size='15vh' />
+          <SiJavascript size='11vh' />
+          <SiReact size='11vh' />
+          <SiTypescript size='11vh' />
+          <SiHtml5 size='11vh' />
+          <SiCss3 size='11vh' />
+          <SiSass size='11vh' />
+          <SiTailwindcss size='11vh' />
+          <SiGraphql size='11vh' />
+          <SiNodeDotJs size='11vh' />
+          <SiStyledComponents size='11vh' />
+          <SiGit size='11vh' />
+          <SiRedux size='11vh' />
+          <SiFirebase size='11vh' />
+          <SiMongodb size='11vh' />
+          <AiOutlineAntDesign size='11vh' />
+          <SiApollographql size='11vh' />
+          <SiNextDotJs size='11vh' />
         </ul>
       </StyledIconGrid>
     </StyledSkills>
@@ -75,8 +75,8 @@ const StyledIconGrid = styled.div`
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 16em 16em 16em 16em 16em;
-    grid-gap: 1em;
+    grid-template-columns: 16rem 16rem 16rem 16rem 16rem;
+    grid-gap: 1rem;
 
     svg {
       flex: 0 15%;
@@ -86,8 +86,13 @@ const StyledIconGrid = styled.div`
 
   @media (max-width: 53em) {
     ul {
-      grid-template-columns: 3em 3em 3em 3em 3em;
+      grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
       grid-gap: 0.8rem;
+    }
+
+    svg:last-of-type(-n + 2) {
+      display: flex;
+      justify-content: center;
     }
 
     svg {
