@@ -7,15 +7,18 @@ import {
   SiCss3,
   SiSass,
   SiTailwindcss,
-  SiGraphql,
+  SiGithub,
   SiNodeDotJs,
   SiRedux,
   SiStyledComponents,
   SiGit,
   SiFirebase,
+  SiNetlify,
   SiApollographql,
   SiMongodb,
   SiNextDotJs,
+  SiHeroku,
+  SiGraphql,
 } from 'react-icons/si';
 import { AiOutlineAntDesign } from 'react-icons/ai';
 import styled from 'styled-components';
@@ -45,7 +48,7 @@ export const SkillsSection = () => {
           <SiCss3 size='11vh' />
           <SiSass size='11vh' />
           <SiTailwindcss size='11vh' />
-          <SiGraphql size='11vh' />
+          <SiGithub size='11vh' />
           <SiNodeDotJs size='11vh' />
           <SiStyledComponents size='11vh' />
           <SiGit size='11vh' />
@@ -54,7 +57,10 @@ export const SkillsSection = () => {
           <SiMongodb size='11vh' />
           <AiOutlineAntDesign size='11vh' />
           <SiApollographql size='11vh' />
+          <SiNetlify size='11vh' />
           <SiNextDotJs size='11vh' />
+          <SiHeroku size='11vh' />
+          <SiGraphql size='11vh' />
         </ul>
       </StyledIconGrid>
     </StyledSkills>
@@ -81,6 +87,18 @@ const StyledIconGrid = styled.div`
     svg {
       flex: 0 15%;
       margin-bottom: 2rem;
+
+      /* &:nth-last-child(1) {
+        grid-column: 4 / span 1;
+      }
+
+      &:nth-last-child(2) {
+        grid-column: 3 / span 1;
+      }
+
+      &:nth-last-child(3) {
+        grid-column: 2 / span 1;
+      } */
     }
   }
 
@@ -88,11 +106,6 @@ const StyledIconGrid = styled.div`
     ul {
       grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
       grid-gap: 0.8rem;
-    }
-
-    svg:last-of-type(-n + 2) {
-      display: flex;
-      justify-content: center;
     }
 
     svg {
