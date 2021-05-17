@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import portrait from '../assets/img/portrait.jpg';
+import developer from '../assets/img/developer.svg';
 import {
   StyledLayout,
   StyledDescription,
@@ -43,8 +43,8 @@ export const BannerSection = () => {
       <StyledBannerImage>
         <motion.img
           variants={photoAnimation}
-          src={portrait}
-          alt='Alan Bedoya'
+          src={developer}
+          alt='software developer'
         />
       </StyledBannerImage>
       <Wave />
@@ -70,19 +70,15 @@ const StyledBanner = styled(StyledLayout)`
     .break {
       display: block;
     }
+
+    /* div:nth-last-child(2) {
+      background: red;
+    } */
   }
 `;
 
 const StyledBannerImage = styled(StyledImage)`
   object-fit: cover;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-
-  @media (min-width: 90em) {
-    img {
-      width: 70%;
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-  }
 
   @media (max-width: 53em) {
     display: flex;

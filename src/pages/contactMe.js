@@ -101,6 +101,7 @@ const StyledContact = styled(motion.div)`
       text-align: left;
       border: solid 1px #b3aca7;
       border-bottom: none;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
       ::-webkit-input-placeholder {
         color: #cccccc;

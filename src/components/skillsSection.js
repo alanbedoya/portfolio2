@@ -87,18 +87,6 @@ const StyledIconGrid = styled.div`
     svg {
       flex: 0 15%;
       margin-bottom: 2rem;
-
-      /* &:nth-last-child(1) {
-        grid-column: 4 / span 1;
-      }
-
-      &:nth-last-child(2) {
-        grid-column: 3 / span 1;
-      }
-
-      &:nth-last-child(3) {
-        grid-column: 2 / span 1;
-      } */
     }
   }
 

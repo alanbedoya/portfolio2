@@ -1,5 +1,5 @@
 import React from 'react';
-import about from '../assets/img/about.svg';
+import portrait from '../assets/img/portrait.jpg';
 import { StyledLayout, StyledDescription } from '../styles';
 import styled from 'styled-components';
 
@@ -11,7 +11,7 @@ export const AboutSection = () => {
           Here's A Little Bit About <span>Me</span>
         </h2>
         <StyledCard>
-          <img src={about} alt='process' />
+          <img className='backgroundCircle' src={portrait} alt='Alan Bedoya' />
           <p>
             I'm a developer that loves learning and strives to understand the
             best effective way to get any task completed. I work primarily in
@@ -44,9 +44,16 @@ const StyledCard = styled.div`
   display: flex;
 
   img {
-    width: 50%;
-    height: auto;
+    width: 39%;
     padding-right: 2rem;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &.backgroundCircle {
+      background: #ffaaa7;
+    }
   }
 
   p {
@@ -54,6 +61,7 @@ const StyledCard = styled.div`
   }
 
   @media (max-width: 53em) {
+    align-items: center;
     flex-flow: column wrap;
 
     P {
@@ -61,9 +69,8 @@ const StyledCard = styled.div`
     }
 
     img {
-      width: 100%;
+      width: 80%;
       height: 100%;
-      padding: 0;
       margin-bottom: 2rem;
     }
   }
