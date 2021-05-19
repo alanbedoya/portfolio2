@@ -8,41 +8,39 @@ import { pageAnimation } from '../animation';
 
 export const FooterSection = () => {
   return (
-    <div className='classes.root'>
-      <StyledFooter
-        variants={pageAnimation}
-        initial='hidden'
-        exit='exit'
-        animate='show'
-      >
-        <p className='copyrightText'>© 2021 Alan Bedoya</p>
-        <StyledIcons>
-          <li>
-            <a href='https://github.com/alanbedoya'>
-              <FaGithubSquare
-                className='colorChange'
-                size='2.2rem'
-                color='#ccc'
-              />
-            </a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/alanbedoya/'>
-              <FaLinkedin className='colorChange' size='2.2rem' color='#ccc' />
-            </a>
-          </li>
-          <li>
-            <a href='https://www.instagram.com/alanbed22/'>
-              <FaInstagramSquare
-                className='colorChange'
-                size='2.2rem'
-                color='#ccc'
-              />
-            </a>
-          </li>
-        </StyledIcons>
-      </StyledFooter>
-    </div>
+    <StyledFooter
+      variants={pageAnimation}
+      initial='hidden'
+      exit='exit'
+      animate='show'
+    >
+      <p className='copyrightText'>© 2021 Alan Bedoya</p>
+      <StyledIcons>
+        <li>
+          <a href='https://github.com/alanbedoya'>
+            <FaGithubSquare
+              className='colorChange'
+              size='2.2rem'
+              color='#ccc'
+            />
+          </a>
+        </li>
+        <li>
+          <a href='https://www.linkedin.com/in/alanbedoya/'>
+            <FaLinkedin className='colorChange' size='2.2rem' color='#ccc' />
+          </a>
+        </li>
+        <li>
+          <a href='https://www.instagram.com/alanbed22/'>
+            <FaInstagramSquare
+              className='colorChange'
+              size='2.2rem'
+              color='#ccc'
+            />
+          </a>
+        </li>
+      </StyledIcons>
+    </StyledFooter>
   );
 };
 

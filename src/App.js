@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import GlobalStyles from './global/globalStyles';
 import { NavSection, FooterSection } from './components';
-import { AboutMe, MyWork, ContactMe, ProjectDetail } from '../src/pages';
+import { AboutMe, MyWork, ContactMe } from '../src/pages';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -18,9 +18,6 @@ function App() {
           </Route>
           <Route path='/work' exact>
             <MyWork />
-          </Route>
-          <Route path='/work/:id' exact>
-            <ProjectDetail />
           </Route>
           <Route path='/contact' exact>
             <ContactMe />

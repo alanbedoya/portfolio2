@@ -68,10 +68,6 @@ const StyledContact = styled(motion.div)`
   color: white;
   padding-bottom: 12rem;
 
-  /* .fieldLeft {
-    flex-flow: row wrap;
-  } */
-
   .contact-form {
     margin-top: 10rem;
     display: flex;
@@ -111,31 +107,24 @@ const StyledContact = styled(motion.div)`
         background-color: #f4f4f2;
       }
     }
-
-    /* button {
-      font-size: 1rem;
-      justify-content: center;
-      align-items: center;
-      width: 25%;
-      margin-top: 2vh;
-      margin-left: 24vh;
-      margin-bottom: 2vh;
-    } */
   }
 
-  @media (max-width: 53em) {
-    flex-flow: column wrap;
+  @media screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 7rem 1rem 6rem 1rem;
 
     .contact-form {
+      justify-items: center;
       margin-top: 4rem;
-      width: 88%;
+      width: 100%;
     }
   }
 
-  @media (max-width: 90em) {
-    /* min-height: 80vh; */
-    /* padding-bottom: 138px; */
+  @media (min-height: 67.57em) {
+    padding-bottom: 18rem;
   }
 `;
 

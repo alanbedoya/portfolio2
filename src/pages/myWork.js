@@ -120,7 +120,7 @@ const StyledWork = styled(motion.div)`
     padding: 1rem 0;
   }
 
-  @media (max-width: 53em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     padding: 7rem 1rem 0 1rem;
   }
 `;
@@ -138,7 +138,7 @@ const StyledProject = styled.div`
     margin-bottom: 3rem;
   }
 
-  @media (max-width: 53em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     margin-bottom: 7rem;
   }
 `;
@@ -157,7 +157,7 @@ const StyledContainer = styled.div`
     padding: 0 0 0 1rem;
   }
 
-  @media (max-width: 64em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     flex-direction: column;
 
     img {
@@ -184,12 +184,16 @@ const StyledButtons = styled.span`
     }
   }
 
-  @media (max-width: 53em) {
+  @media (max-device-width: 35.45em) {
     button {
       padding: 1rem 1.6rem;
       &.button2 {
         margin-left: 0.5rem;
       }
     }
+  }
+
+  @media (max-device-width: 17em) {
+    flex-flow: column wrap;
   }
 `;
