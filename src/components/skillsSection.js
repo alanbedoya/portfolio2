@@ -89,19 +89,19 @@ const StyledIconGrid = styled.div`
     gap: 1vw;
 
     svg {
+      flex: 0 15%;
       margin-bottom: 2rem;
-      width: 6vw;
     }
   }
 
   @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     ul {
-      grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
+      grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
       grid-template-rows: 5rem 5rem 5rem 5rem;
     }
 
     svg {
-      width: 100px;
+      width: 6vh;
     }
   }
 `;
