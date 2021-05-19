@@ -8,7 +8,7 @@ export const StyledLayout = styled.div`
   padding: 5rem;
   color: white;
 
-  @media (max-width: 53em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     padding: 5rem 1rem 2rem 1rem;
   }
 `;

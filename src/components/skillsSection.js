@@ -74,6 +74,10 @@ const StyledSkills = styled(StyledLayout)`
     padding-bottom: 2rem;
     font-weight: lighter;
   }
+
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+    padding-top: 4rem;
+  }
 `;
 
 const StyledIconGrid = styled.div`
@@ -81,24 +85,23 @@ const StyledIconGrid = styled.div`
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 16rem 16rem 16rem 16rem 16rem;
-    grid-gap: 1rem;
+    grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
+    gap: 1vw;
 
     svg {
-      flex: 0 15%;
       margin-bottom: 2rem;
+      width: 6vw;
     }
   }
 
-  @media (max-width: 53em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     ul {
       grid-template-columns: 3rem 3rem 3rem 3rem 3rem;
-      grid-gap: 0.8rem;
+      grid-template-rows: 5rem 5rem 5rem 5rem;
     }
 
     svg {
-      width: 8vh;
-      height: 8vh;
+      width: 100px;
     }
   }
 `;

@@ -62,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
       line-height: 150%;
     }
 
-    @media (max-width: 53em) {
+    @media screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
 
       h2{
         font-size: 2.5rem;
@@ -73,11 +73,11 @@ const GlobalStyles = createGlobalStyle`
       }
     }
 
-    @media (max-width: 75em) {
+    /* @media (min-width: 17em) {
       a {
         font-size: 0.8rem;
       }
-    }
+    } */
 `;
 
 export default GlobalStyles;

@@ -53,11 +53,9 @@ export const BannerSection = () => {
 };
 
 const StyledBanner = styled(StyledLayout)`
-  @media (max-width: 53em) {
-    display: flex;
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
     padding-top: 7rem;
     padding-left: 1.5rem;
 
@@ -70,17 +68,13 @@ const StyledBanner = styled(StyledLayout)`
     .break {
       display: block;
     }
-
-    /* div:nth-last-child(2) {
-      background: red;
-    } */
   }
 `;
 
 const StyledBannerImage = styled(StyledImage)`
   object-fit: cover;
 
-  @media (max-width: 53em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
