@@ -120,7 +120,7 @@ const StyledWork = styled(motion.div)`
     padding: 1rem 0;
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
     padding: 7rem 1rem 0 1rem;
   }
 `;
@@ -169,6 +169,16 @@ const StyledContainer = styled.div`
     p {
       font-size: 1rem;
       padding: 0;
+    }
+  }
+
+  @media only screen and (min-device-width: 35.5em) and (max-device-width: 64em) {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 40%;
+      margin-bottom: 2rem;
     }
   }
 `;
