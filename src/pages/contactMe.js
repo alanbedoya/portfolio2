@@ -41,8 +41,7 @@ export const ContactMe = () => {
     >
       <div className='fieldLeft'>
         <h2>
-          Sweet! Let's <br /> <span>Connect</span> & start <br />
-          collabrating.
+          Sweet! Let's <span>Connect</span> <br /> & start collabrating.
         </h2>
       </div>
       <form className='contact-form' onSubmit={sendEmail}>
@@ -60,7 +59,6 @@ export const ContactMe = () => {
 };
 
 const StyledContact = styled(motion.div)`
-  min-height: 85.2vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,7 +107,7 @@ const StyledContact = styled(motion.div)`
     }
   }
 
-  @media screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+  @media screen and (min-device-width: 12em) and (max-device-width: 64.1em) {
     display: block;
     flex-direction: column;
     align-items: center;
@@ -123,8 +121,21 @@ const StyledContact = styled(motion.div)`
     }
   }
 
-  @media (min-height: 67.57em) {
-    padding-bottom: 18rem;
+  @media screen and (min-device-width: 35.5em) and (max-device-width: 63.94em) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-height: 63.94em) {
+    padding-bottom: 17rem;
+
+    .contact-form {
+      margin-top: 8rem;
+    }
+  }
+
+  @media (min-height: 85em) {
+    padding-bottom: 29rem;
   }
 `;
 
