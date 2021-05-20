@@ -54,6 +54,8 @@ const StyledFooter = styled(motion.footer)`
   align-items: center;
   justify-content: space-between;
   align-self: center;
+  width: 100%;
+  position: relative;
   bottom: 0;
 
   .copyrightText {

@@ -126,8 +126,8 @@ const StyledContact = styled(motion.div)`
     justify-content: center;
   }
 
-  @media (min-height: 63.94em) {
-    padding-bottom: 17rem;
+  @media (min-height: 63em) {
+    padding-bottom: 40vh;
 
     .contact-form {
       margin-top: 8rem;
@@ -135,7 +135,7 @@ const StyledContact = styled(motion.div)`
   }
 
   @media (min-height: 85em) {
-    padding-bottom: 29rem;
+    padding-bottom: 48vh;
   }
 `;
 
