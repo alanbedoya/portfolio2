@@ -12,7 +12,7 @@ import {
   lineAnimation,
 } from '../animation';
 
-export const MyWork = () => {
+const MyWork = () => {
   return (
     <StyledWork
       variants={pageAnimation}
@@ -207,3 +207,5 @@ const StyledButtons = styled.span`
     flex-flow: column wrap;
   }
 `;
+
+export default MyWork;

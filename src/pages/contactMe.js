@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 import { useAlert } from 'react-alert';
 
-export const ContactMe = () => {
+const ContactMe = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const alert = useAlert();
 
@@ -144,3 +144,5 @@ const StyledButton = styled.span`
   justify-content: center;
   margin-top: 2rem;
 `;
+
+export default ContactMe;
