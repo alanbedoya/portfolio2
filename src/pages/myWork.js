@@ -145,24 +145,24 @@ const StyledProject = styled.div`
 
 const StyledContainer = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 0 2vh;
 
   img {
-    width: 55%;
-    height: 41rem;
+    width: 100%;
+    height: 39rem;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   p {
-    padding: 0 0 0 1rem;
+    padding: 1rem 0 0 0;
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
-    flex-direction: column;
-
+  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
     img {
       width: 100%;
-      height: 40%;
+      height: 70%;
       margin-bottom: 2rem;
     }
 
