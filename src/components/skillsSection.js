@@ -98,6 +98,7 @@ const StyledIconGrid = styled.div`
     ul {
       grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
       grid-template-rows: 5rem 5rem 5rem 5rem;
+      padding-bottom: 2rem;
     }
 
     svg {

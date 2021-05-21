@@ -71,7 +71,7 @@ const StyledCard = styled.div`
     }
 
     img {
-      width: 65%;
+      width: 69%;
       height: 100%;
       margin-bottom: 2rem;
     }
