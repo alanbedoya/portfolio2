@@ -8,7 +8,7 @@ import {
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <motion.div
       variants={pageAnimation}
@@ -24,3 +24,5 @@ export const AboutMe = () => {
     </motion.div>
   );
 };
+
+export default AboutMe;
