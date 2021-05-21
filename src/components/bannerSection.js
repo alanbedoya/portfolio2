@@ -10,7 +10,7 @@ import {
 } from '../styles';
 import { titleAnimation, fadeAnimation, photoAnimation } from '../animation';
 import { motion } from 'framer-motion';
-import { Wave } from '../components';
+import { Wave } from '.';
 
 export const BannerSection = () => {
   return (
@@ -76,7 +76,8 @@ const StyledBanner = styled(StyledLayout)`
 `;
 
 const StyledBannerImage = styled(StyledImage)`
-  object-fit: cover;
+  object-fit: center;
+  overflow: hidden;
 
   @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     display: flex;
