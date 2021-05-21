@@ -102,6 +102,11 @@ const Menu = styled.ul`
     padding: 2rem;
     position: relative;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    height: auto;
+    text-align: left;
   }
 
   a {
@@ -110,14 +115,6 @@ const Menu = styled.ul`
     @media (max-width: 75em) {
       font-size: 1rem;
     }
-  }
-
-  li {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    height: auto;
-    text-align: left;
   }
 
   @media (max-width: 53em) {
@@ -149,9 +146,11 @@ const Hamburger = styled.div`
 `;
 
 const StyledLine = styled(motion.div)`
+  display: flex;
+  justify-content: center;
   height: 0.3rem;
   bottom: 0;
-  margin: 0.625rem;
+  margin-bottom: 0.625rem;
   background: #89c9b8;
   position: absolute;
 
