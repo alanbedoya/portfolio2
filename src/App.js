@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import GlobalStyles from './global/globalStyles';
 import { NavSection, FooterSection } from './components';
-import AboutMe from '../src/pages/AboutMe';
+import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
 import ContactMe from './pages/ContactMe';
 import { AnimatePresence } from 'framer-motion';
