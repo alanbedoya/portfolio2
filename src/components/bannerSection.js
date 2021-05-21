@@ -78,7 +78,8 @@ const StyledBanner = styled(StyledLayout)`
 const StyledBannerImage = styled(StyledImage)`
   object-fit: center;
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+    height: 20rem;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
