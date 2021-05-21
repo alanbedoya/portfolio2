@@ -53,7 +53,11 @@ export const BannerSection = () => {
 };
 
 const StyledBanner = styled(StyledLayout)`
-  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+  .break::after {
+    content: ' ';
+  }
+
+  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
     flex-direction: column;
     justify-content: center;
     padding-top: 7rem;
@@ -64,7 +68,7 @@ const StyledBanner = styled(StyledLayout)`
     }
   }
 
-  @media (min-width: 90em) {
+  @media (min-width: 85em) {
     .break {
       display: block;
     }

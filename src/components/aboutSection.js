@@ -46,7 +46,7 @@ const StyledCard = styled.div`
   align-items: center;
 
   img {
-    width: 39%;
+    width: 38%;
     padding-right: 2rem;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -62,7 +62,7 @@ const StyledCard = styled.div`
     padding-left: 1rem;
   }
 
-  @media screen and (min-width: 12em) and (max-width: 35.45em) {
+  @media screen and (min-width: 12em) and (max-width: 64em) {
     align-items: center;
     flex-flow: column wrap;
 
@@ -71,7 +71,7 @@ const StyledCard = styled.div`
     }
 
     img {
-      width: 80%;
+      width: 65%;
       height: 100%;
       margin-bottom: 2rem;
     }
