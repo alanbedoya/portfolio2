@@ -46,7 +46,7 @@ const StyledCard = styled.div`
   align-items: center;
 
   img {
-    width: 38%;
+    width: 39%;
     padding-right: 2rem;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,

@@ -77,7 +77,6 @@ const StyledBanner = styled(StyledLayout)`
 
 const StyledBannerImage = styled(StyledImage)`
   object-fit: center;
-  overflow: hidden;
 
   @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
     display: flex;
