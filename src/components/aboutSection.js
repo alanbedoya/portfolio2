@@ -62,7 +62,7 @@ const StyledCard = styled.div`
     padding-left: 1rem;
   }
 
-  @media screen and (min-width: 12em) and (max-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     align-items: center;
     flex-flow: column wrap;
 

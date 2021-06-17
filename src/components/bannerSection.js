@@ -57,7 +57,7 @@ const StyledBanner = styled(StyledLayout)`
     content: ' ';
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     flex-direction: column;
     justify-content: center;
     padding-top: 7rem;
@@ -78,7 +78,7 @@ const StyledBanner = styled(StyledLayout)`
 const StyledBannerImage = styled(StyledImage)`
   object-fit: center;
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     height: 20rem;
     display: flex;
     justify-content: center;

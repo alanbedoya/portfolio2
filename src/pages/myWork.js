@@ -112,7 +112,7 @@ const MyWork = () => {
 
 const StyledWork = styled(motion.div)`
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 5rem 12rem;
   align-items: center;
   justify-content: center;
 
@@ -120,7 +120,7 @@ const StyledWork = styled(motion.div)`
     padding: 1rem 0;
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     padding: 7rem 1rem 0 1rem;
   }
 `;
@@ -138,7 +138,7 @@ const StyledProject = styled.div`
     margin-bottom: 3rem;
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 35.45em) {
+  @media (min-width: 12em) and (max-width: 35.45em) {
     margin-bottom: 7rem;
   }
 `;
@@ -159,7 +159,7 @@ const StyledContainer = styled.div`
     padding: 1rem 0 0 0;
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     img {
       width: 100%;
       height: 70%;
@@ -172,7 +172,7 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media only screen and (min-device-width: 35.5em) and (max-device-width: 64em) {
+  @media (min-width: 35.5em) and (max-width: 64em) {
     flex-direction: column;
 
     img {
@@ -194,7 +194,7 @@ const StyledButtons = styled.span`
     }
   }
 
-  @media (max-device-width: 35.45em) {
+  @media (max-width: 35.45em) {
     button {
       padding: 1rem 1.6rem;
       &.button2 {
@@ -203,7 +203,7 @@ const StyledButtons = styled.span`
     }
   }
 
-  @media (max-device-width: 17em) {
+  @media (max-width: 17em) {
     flex-flow: column wrap;
   }
 `;

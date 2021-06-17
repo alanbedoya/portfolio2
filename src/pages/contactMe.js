@@ -107,7 +107,7 @@ const StyledContact = styled(motion.div)`
     }
   }
 
-  @media screen and (min-device-width: 12em) and (max-device-width: 64.1em) {
+  @media (min-width: 12em) and (max-width: 64.1em) {
     display: block;
     flex-direction: column;
     align-items: center;
@@ -121,7 +121,7 @@ const StyledContact = styled(motion.div)`
     }
   }
 
-  @media screen and (min-device-width: 35.5em) and (max-device-width: 63.94em) {
+  @media (min-width: 35.5em) and (max-width: 63.94em) {
     display: flex;
     justify-content: center;
   }

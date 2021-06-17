@@ -94,7 +94,7 @@ const StyledIconGrid = styled.div`
     }
   }
 
-  @media only screen and (min-device-width: 12em) and (max-device-width: 64em) {
+  @media (min-width: 12em) and (max-width: 64em) {
     ul {
       grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
       grid-template-rows: 5rem 5rem 5rem 5rem;
