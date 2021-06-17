@@ -53,7 +53,12 @@ export const NavSection = () => {
           />
         </li>
         <li>
-          <Link onClick={() => setIsOpen(!isOpen)} to={resume} target='opener'>
+          <Link
+            onClick={() => setIsOpen(!isOpen)}
+            to={resume}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             4. Resume
           </Link>
         </li>

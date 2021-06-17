@@ -32,35 +32,33 @@ export const SkillsSection = () => {
         Tools I <span>Know</span>
       </h2>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-        praesentium, asperiores doloribus dolorum fugiat incidunt quasi nam
-        neque officia consequatur error distinctio, reiciendis saepe hic
-        sapiente molestiae rerum odio dicta minima quae, repellat beatae
-        reprehenderit quidem. Dolores placeat ducimus blanditiis possimus libero
-        cumque ipsa rerum quas nostrum facere, ex harum.
+        Here's a list of tools I've used on projects. My toolbox is always
+        expanding and I'm happy to learn and implement something new to achieve
+        a better way to create the best expereince for both the client, and
+        developement side.
       </p>
       <StyledIconGrid>
         <ul>
-          <SiJavascript size='11vh' />
-          <SiReact size='11vh' />
-          <SiTypescript size='11vh' />
-          <SiHtml5 size='11vh' />
-          <SiCss3 size='11vh' />
-          <SiSass size='11vh' />
-          <SiTailwindcss size='11vh' />
-          <SiGithub size='11vh' />
-          <SiNodeDotJs size='11vh' />
-          <SiStyledComponents size='11vh' />
-          <SiGit size='11vh' />
-          <SiRedux size='11vh' />
-          <SiFirebase size='11vh' />
-          <SiMongodb size='11vh' />
-          <AiOutlineAntDesign size='11vh' />
-          <SiApollographql size='11vh' />
-          <SiNetlify size='11vh' />
-          <SiNextDotJs size='11vh' />
-          <SiHeroku size='11vh' />
-          <SiGraphql size='11vh' />
+          <SiJavascript size='11vh' title='JavaScript' />
+          <SiReact size='11vh' title='React' />
+          <SiTypescript size='11vh' title='TypeScript' />
+          <SiHtml5 size='11vh' title='HTML' />
+          <SiCss3 size='11vh' title='CSS' />
+          <SiSass size='11vh' title='Sass' />
+          <SiTailwindcss size='11vh' title='Tailwind CSS' />
+          <SiGithub size='11vh' title='Github' />
+          <SiNodeDotJs size='11vh' title='Node.js' />
+          <SiStyledComponents size='11vh' title='Styled Components' />
+          <SiGit size='11vh' title='Git' />
+          <SiRedux size='11vh' title='Redux' />
+          <SiFirebase size='11vh' title='Firebase' />
+          <SiMongodb size='11vh' title='MongoDB' />
+          <AiOutlineAntDesign size='11vh' title='Ant Design' />
+          <SiApollographql size='11vh' title='Apollo' />
+          <SiNetlify size='11vh' title='Netlify' />
+          <SiNextDotJs size='11vh' title='Next.js' />
+          <SiHeroku size='11vh' title='Heroku' />
+          <SiGraphql size='11vh' title='GraphQL' />
         </ul>
       </StyledIconGrid>
     </StyledSkills>

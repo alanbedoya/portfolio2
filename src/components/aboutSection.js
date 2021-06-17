@@ -13,20 +13,24 @@ export const AboutSection = () => {
         <StyledCard>
           <img className='backgroundCircle' src={portrait} alt='Alan Bedoya' />
           <p>
-            I'm a developer that loves learning and strives to understand the
-            best effective way to get any task completed. I work primarily in
-            the Javascript ecosystem using tools such as the <span>React</span>{' '}
-            library and Vue framework. Within those, I have experience using
-            Typescript to help maintain consistent code, while also using
-            GraphQL to fetch data from an API. I've used both CSS pre-processors
-            like SASS and CSS frameworks like Tailwindcss, Bootstrap, and Ant
-            Design to help make responsive applications and sites. For backend
-            use, I have used PostgreSQL and MongoDB Atlas. Overall being able to
-            code is important but knowing how to interact and connect with
-            people is just as important. I always make sure to bring a positive
-            and helpful work environment to all team members working alongside
-            me, doing my absolute best to contribute to not only mine but the
-            teams growth.
+            I'm a developer that loves learning, is always in pursuit of a great
+            cup of coffee, switching out guitar pedals to make more pretty
+            noise, and strives to understand the best effective way to get any
+            task completed. I work primarily in the Javascript ecosystem using
+            tools such as the <span>React</span> library and <span>Vue</span>{' '}
+            framework. Within those, I have experience using{' '}
+            <span>Typescript</span> to help maintain consistent code, while also
+            using <span>GraphQL</span> to fetch data from an API. I've used both
+            CSS pre-processors like <span>SASS</span> and CSS frameworks like{' '}
+            <span>Tailwindcss</span>, <span>Bootstrap</span>, and{' '}
+            <span>Ant Design</span> to help make responsive applications and
+            sites. For backend use I have had experenice using{' '}
+            <span>Node.js</span> and <span>MongoDB Atlas</span>. Overall being
+            able to code is important but knowing how to interact and connect
+            with people is just as important. I always make sure to bring a
+            positive and helpful work environment to all team members working
+            alongside me, doing my absolute best to contribute to not only mine
+            but the teams growth.
           </p>
         </StyledCard>
       </StyledDescription>
