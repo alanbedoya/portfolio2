@@ -33,9 +33,10 @@ export const SkillsSection = () => {
       </h2>
       <p>
         Here's a list of tools I've used on projects. My toolbox is always
-        expanding and I'm happy to learn and implement something new to achieve
-        a better way to create the best expereince for both the client, and
-        developement side.
+        expanding. I'm more than happy to learn and implement something new to
+        achieve the most productive and best expereince for both the client, and
+        developement side of projects. The beauty with this field of work, is
+        that there's always something to learn.
       </p>
       <StyledIconGrid>
         <ul>

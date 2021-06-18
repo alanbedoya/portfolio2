@@ -22,7 +22,7 @@ export const AboutSection = () => {
             using <span>Typescript</span> to help maintain consistent code,
             while also using <span>GraphQL</span> to fetch data from an API.
             I've used both CSS pre-processors like <span>SASS</span> and CSS
-            frameworks like <span>Tailwindcss</span>, <span>Bootstrap</span>,
+            frameworks like <span>Tailwind CSS</span>, <span>Bootstrap</span>,
             and <span>Ant Design</span> to help make responsive applications and
             sites. For backend use I have had experenice using{' '}
             <span>Node.js</span> and <span>MongoDB Atlas</span>. Overall being
@@ -30,7 +30,7 @@ export const AboutSection = () => {
             with people is just as important. I always make sure to bring a
             positive and helpful work environment to all team members working
             alongside me, doing my absolute best to contribute to not only mine
-            but the teams growth.
+            but the team's growth.
           </p>
         </StyledCard>
       </StyledDescription>
