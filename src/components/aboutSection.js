@@ -17,13 +17,13 @@ export const AboutSection = () => {
             cup of coffee, switching out guitar pedals to make more pretty
             noise, and strives to understand the best effective way to get any
             task completed. I work primarily in the Javascript ecosystem using
-            tools such as the <span>React</span> library and <span>Vue</span>{' '}
-            framework. Within those, I have experience using{' '}
-            <span>Typescript</span> to help maintain consistent code, while also
-            using <span>GraphQL</span> to fetch data from an API. I've used both
-            CSS pre-processors like <span>SASS</span> and CSS frameworks like{' '}
-            <span>Tailwindcss</span>, <span>Bootstrap</span>, and{' '}
-            <span>Ant Design</span> to help make responsive applications and
+            tools such as the <span>React</span> library and{' '}
+            <span>Next.js</span> framework. Within those, I have experience
+            using <span>Typescript</span> to help maintain consistent code,
+            while also using <span>GraphQL</span> to fetch data from an API.
+            I've used both CSS pre-processors like <span>SASS</span> and CSS
+            frameworks like <span>Tailwindcss</span>, <span>Bootstrap</span>,
+            and <span>Ant Design</span> to help make responsive applications and
             sites. For backend use I have had experenice using{' '}
             <span>Node.js</span> and <span>MongoDB Atlas</span>. Overall being
             able to code is important but knowing how to interact and connect
