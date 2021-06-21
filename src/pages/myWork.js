@@ -26,9 +26,9 @@ export const MyWork = () => {
         <StyledContainer>
           <motion.img variants={photoAnimation} src={gamer} alt='athlete' />
           <motion.p variants={fadeAnimation}>
-            Gamer is a game searching app at it's core. It shows users right
+          Gamer is a game searching app at its core. It shows users right
             away 3 categories. Upcoming games, popular games, and new games.
-            They are able to scroll down and view the constely updated
+            They are able to scroll down and view the constantly updated
             categories and easily scroll back up to the top by clicking the
             scroll to top button. If a user want's to know more about a specific
             game, they can click on the card and it while do an animation to
@@ -38,8 +38,8 @@ export const MyWork = () => {
             the game. All of this is being pull from the 3rd party api Rawg.io.
             A user can search up any game title and anything related to their
             search will appear, they can then click on the card and view all the
-            deatils about it. It was built using: <span>React</span>,{' '}
-            <span>Sass</span>, <span>Axios</span>, <span>Frammer Motion</span>,{' '}
+            details about it. It was built using: <span>React</span>,{' '}
+            <span>Sass</span>, <span>React Icons</span>, <span>Axios</span>, <span>Frammer Motion</span>,{' '}
             <span>Redux</span>, and <span>Redux Thunk</span>.
             <br />
             <StyledButtons>
@@ -67,14 +67,8 @@ export const MyWork = () => {
         <StyledContainer>
           <img src={chatter} alt='racer' />
           <p>
-            Chatter is a live messaging app. A user can login in with their
-            account from the 4 options listed: Google, Github, Twitter, and
-            Facebook. I was able to do this with Firebase authenication and
-            giving the providers OAuth authorization. From there a user can view
-            their current conversation, start a new one, invite other users,
-            share photos, and delete a conversation if their the creator of it.
-            It was built using: <span>React</span>, <span>Axios</span>,{' '}
-            <span>Firebase</span>, <span>Tailwind CSS</span>, and{' '}
+          Chatter is a live messaging app. A user can login in with their account from the 4 options listed: Google, Github, Twitter, and Facebook. I was able to do this with Firebase authentication and giving the providers OAuth authorization. From there a user can view their current conversation, start a new one, invite other users, share photos, and delete a conversation if their the creator of it. It was built using: <span>React</span>, <span>Axios</span>, <span>React Icons</span>,{' '}
+            <span>Firebase Auth</span>, <span>Tailwind CSS</span>, and{' '}
             <span>Chat Engine</span>.
             <br />
             <StyledButtons>

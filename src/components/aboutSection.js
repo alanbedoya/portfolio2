@@ -24,7 +24,7 @@ export const AboutSection = () => {
             I've used both CSS pre-processors like <span>SASS</span> and CSS
             frameworks like <span>Tailwind CSS</span>, <span>Bootstrap</span>,
             and <span>Ant Design</span> to help make responsive applications and
-            sites. For backend use I have had experenice using{' '}
+            sites. For backend use I have had experience using{' '}
             <span>Node.js</span> and <span>MongoDB Atlas</span>. Overall being
             able to code is important but knowing how to interact and connect
             with people is just as important. I always make sure to bring a
